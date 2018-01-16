@@ -1,81 +1,62 @@
 en:
   help_welcome:
-    title: "About the Help Category"
+    title: "About Help"
     body: |
       Here you can post anything about Civically you're having trouble with. For example:
 
-      - You can't figure out how to do something
+      * You can't figure out how to do something
 
-      - You think there is a technical issue with Civically
+      * You think there is a technical issue with Civically
 
-      - You have an issue or question, but you're not sure where to post it
+      * You have an issue or question, but you're not sure where to post it
 
-      The Civically team check this category frequently, but any member of the Civically community can respond
-      if they can be of assistance.
+      The Civically team check #help frequently, but any member of the Civically community can respond if they can be of assistance.
 
       ### Sensitive or Private Matters
       If you need to discuss a sensitive or private matter please send a private message to your place moderator.
+
       If there is an issue with messaging your place moderator about the matter, you can send a private message to a site moderator.
 
-      If you have tried messaging both your place moderator and a site moderator about a matter
-      and you still have an issue, please contact sensitivematter@trycivically.com
+      If you have tried messaging both your place moderator and a site moderator about a matter and you still have an issue, please contact sensitivematter@trycivically.com
 
   petitions_welcome:
-    title: "About the Petitions Category"
+    title: "About Petitions"
     body: |
       Here you will find petitions that concern all of Civically. Petitions for:
 
-        - [New places](/c/petitions/place)
+      * #petitions:place
 
-        - [New apps that aren't specific to a place](/c/petitions/app)
+      * #petitions:app
 
-      Petitions that are specific to a place, e.g. the creation of a new group for a place, can be
-      found in the place itself.
+      Petitions that are specific to a place, e.g. the creation of a new group for a place, can be found in the place itself.
 
   plans_welcome:
-    title: "About the Plans Category"
+    title: "About Plans"
     body: |
-      Civically has both open source code and an open product. This means that all
-      the details of Civically’s product management are available on Civically itself and can be
-      contributed to by anybody. The Plans category is where that work happens.
+      Civically has both open source code and an open product. This means that all the details of Civically’s product management are available on Civically itself and can be contributed to by anybody. #plans is where that work happens.
 
-      ## Product management
+      ### Product management
 
-      ‘Product management’ in technology can refer to a variety of work.
-      The most common aspects are feature development, project management,
-      user experience and analytics. It can also include marketing, research,
-      customer relations, and other business roles. It is typically a role that
-      seeks synthesis between the various disciplines and resources that are part
-      of a successful product.
+      ‘Product management’ in technology can refer to a variety of work. The most common aspects are feature development, project management, user experience and analytics. It can also include marketing, research, customer relations, and other business roles. It is typically a role that seeks synthesis between the various disciplines and resources that are part of a successful product.
 
-      Topics in the Plans category are not strictly limited to 'product management',
-      however it is useful way to think about the role of planning in Civically.
+      Topics in #plans are not strictly limited to 'product management', however it is useful way to think about the role of planning in Civically.
 
       ### Workflow
 
-      Work starts with users or civically team members making plans or proposals here in the #plans category.
-      Plans should be as specific as possible and should be largely descriptive.
-      Other users can respond and discuss the plan, and ‘upvote’ the plan to show their support.
+      Work starts with users or civically team members making plans or proposals here in #plans. Plans should be as specific as possible and should be largely descriptive. Other users can respond and discuss the plan, and ‘upvote’ the plan to show their support.
 
-      A member of the Civically team will decide what plans will be worked on based on the overall goals of the product,
-      the details of the plan and the support it has received. Once a proposed plan has been selected,
-      it is broken down into task(s) which are posted in [Work](/c/work).
+      A member of the Civically team will decide what plans will be worked on based on the overall goals of the product, the details of the plan and the support it has received. Once a proposed plan has been selected, it is broken down into task(s) which are posted in #work.
 
-      There are no hard and fast rules as to what plans require their own topic.
-      It is judged on a case by case basis by those creating the topic and by the moderators.
+      There are no hard and fast rules as to what plans require their own topic. It is judged on a case by case basis by those creating the topic and by the moderators.
 
   work_welcome:
-    title: "About the Work Category"
+    title: "About Work"
     body: |
-      This category is where work on Civically is done. Work can be development, design,
-      or anything else for which there are defined, discrete tasks.
+      #work is where work on Civically is done. Work can be development, design, or anything else for which there are defined, discrete tasks.
 
-      There are no hard rules as to what tasks require their own topic.
-      It is judged on a case by case basis by those working on the task and by the moderators.
+      There are no hard rules as to what tasks require their own topic. It is judged on a case by case basis by those working on the task and by the moderators.
 
-      Generally speaking work should relate to plan(s) in the [Plans category](/c/plans), however
-      this will not be true in all cases.
-
+      Generally speaking work should relate to plan(s) in the #plans, however this will not be true in all cases.
 
   guidelines_topic:
     title: "FAQ/Guidelines"
@@ -124,7 +105,7 @@ en:
 
       Make the effort to put things in the right place, so that we can spend more time discussing and less cleaning up. So:
 
-      *   Don’t start a topic in the wrong category.
+      *   Don’t start a topic in the wrong place.
       *   Don’t cross-post the same thing in multiple topics.
       *   Don’t post no-content replies.
       *   Don’t divert a topic by changing it midstream.
@@ -144,7 +125,7 @@ en:
 
       Civically is powered by you and your contributions. The Civically Team only plays a curatorial role. The goal is to make Civically 100% community run.
 
-      Join in the discussion about plans for Civically in the [Plans category](/c/plans) and pitch in where you can in the [Work category](/c/work).
+      Join in the discussion about plans for Civically in #plans and pitch in where you can in #work.
 
       <a name="tos"></a>
 
