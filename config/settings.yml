@@ -1,0 +1,5 @@
+plugins:
+  petition_category_id:
+    default: 1
+    type: category_list
+    client: true

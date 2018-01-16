@@ -1,0 +1,21 @@
+.coming-soon {
+  display: inline-block;
+  position: relative;
+
+  .popover {
+    padding: 3px;
+    border: 1px solid $primary-medium;
+    color: $primary;
+    background: $secondary;
+    position: absolute;
+    bottom: 20px;
+    white-space: nowrap;
+    z-index: 9999;
+    padding: 0 5px;
+  }
+}
+
+.coming-soon span.label {
+  font-size: 11px;
+  font-style: italic;
+}
