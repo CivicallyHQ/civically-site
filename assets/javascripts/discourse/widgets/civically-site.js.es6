@@ -23,7 +23,7 @@ const typeUrl = function(type) {
 };
 
 const rightContent = function(type, item) {
-  if (type === 'petition' && item.vote_count) {
+  if ((type === 'petition' || type === 'plan') && item.vote_count) {
     return h('div', [
       h('span', [item.vote_count]),
       iconNode('check-square-o')
