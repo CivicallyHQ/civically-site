@@ -19,6 +19,20 @@ en:
 
       If you have tried messaging both your place moderator and a site moderator about a matter and you still have an issue, please contact sensitivematter@trycivically.com
 
+  policies_welcome:
+    title: "About Policies"
+    body: |
+      Here you will find policies about using Civically. In each topic the policy is in the first post of the topic.
+
+      You can discuss the policy by replying to the policy post. Discussion should be about the content of the policy, not how to use the functionality the policy relates to.
+
+  how_to_welcome:
+    title: "About How To"
+    body: |
+      Here you will find topics about how to use Civically. In each topic the first post is a step by step description of the functionality.
+
+      You can ask questions about the relevant functionality by replying to the post. Discussions about the policy behind the functionality should be raised in a relevant topic in #help:policies.
+
   petitions_welcome:
     title: "About Petitions"
     body: |
