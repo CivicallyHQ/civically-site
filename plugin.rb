@@ -99,6 +99,43 @@ after_initialize do
     end
   end
 
+  work_category = Category.find_by(name: 'Work')
+
+  unless Category.find_by(name: 'Plugins')
+    category = Category.create(
+      user: Discourse.system_user,
+      name: 'Plugins',
+      color: SecureRandom.hex(3),
+      allow_badges: true,
+      permissions: { everyone: 2 },
+      text_color: 'FFFFF',
+      parent_category_id: work_category.id,
+      custom_fields: {
+        'meta': true
+      }
+    )
+    if category.save
+      t = Topic.new(
+       title: I18n.t("plugins_welcome.title"),
+       user: Discourse.system_user,
+       pinned_at: Time.now,
+       category_id: category.id
+      )
+      t.skip_callbacks = true
+      t.ignore_category_auto_close = true
+      t.delete_topic_timer(TopicTimer.types[:close])
+      t.save!(validate: false)
+
+      category.topic_id = t.id
+      category.save!
+
+      t.posts.create(
+       raw: I18n.t('plugins_welcome.body'),
+       user: Discourse.system_user
+      )
+    end
+  end
+
   unless Category.find_by(name: 'Plans')
     category = Category.create(user: Discourse.system_user,
                                name: 'Plans',

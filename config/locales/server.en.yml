@@ -1,77 +1,4 @@
 en:
-  help_welcome:
-    title: "About Help"
-    body: |
-      Here you can post anything about Civically you're having trouble with. For example:
-
-      * You can't figure out how to do something
-
-      * You think there is a technical issue with Civically
-
-      * You have an issue or question, but you're not sure where to post it
-
-      The Civically team check #help frequently, but any member of the Civically community can respond if they can be of assistance.
-
-      ### Sensitive or Private Matters
-      If you need to discuss a sensitive or private matter please send a private message to your place moderator.
-
-      If there is an issue with messaging your place moderator about the matter, you can send a private message to a site moderator.
-
-      If you have tried messaging both your place moderator and a site moderator about a matter and you still have an issue, please contact sensitivematter@trycivically.com
-
-  policies_welcome:
-    title: "About Policies"
-    body: |
-      Here you will find policies about using Civically. In each topic the policy is in the first post of the topic.
-
-      You can discuss the policy by replying to the policy post. Discussion should be about the content of the policy, not how to use the functionality the policy relates to.
-
-  how_to_welcome:
-    title: "About How To"
-    body: |
-      Here you will find topics about how to use Civically. In each topic the first post is a step by step description of the functionality.
-
-      You can ask questions about the relevant functionality by replying to the post. Discussions about the policy behind the functionality should be raised in a relevant topic in #help:policies.
-
-  petitions_welcome:
-    title: "About Petitions"
-    body: |
-      Here you will find petitions that concern all of Civically. Petitions for:
-
-      * #petitions:place
-
-      * #petitions:app
-
-      Petitions that are specific to a place, e.g. the creation of a new group for a place, can be found in the place itself.
-
-  plans_welcome:
-    title: "About Plans"
-    body: |
-      Civically has both open source code and an open product. This means that all the details of Civically’s product management are available on Civically itself and can be contributed to by anybody. #plans is where that work happens.
-
-      ### Product management
-
-      ‘Product management’ in technology can refer to a variety of work. The most common aspects are feature development, project management, user experience and analytics. It can also include marketing, research, customer relations, and other business roles. It is typically a role that seeks synthesis between the various disciplines and resources that are part of a successful product.
-
-      Topics in #plans are not strictly limited to 'product management', however it is useful way to think about the role of planning in Civically.
-
-      ### Workflow
-
-      Work starts with users or civically team members making plans or proposals here in #plans. Plans should be as specific as possible and should be largely descriptive. Other users can respond and discuss the plan, and ‘upvote’ the plan to show their support.
-
-      A member of the Civically team will decide what plans will be worked on based on the overall goals of the product, the details of the plan and the support it has received. Once a proposed plan has been selected, it is broken down into task(s) which are posted in #work.
-
-      There are no hard and fast rules as to what plans require their own topic. It is judged on a case by case basis by those creating the topic and by the moderators.
-
-  work_welcome:
-    title: "About Work"
-    body: |
-      #work is where work on Civically is done. Work can be development, design, or anything else for which there are defined, discrete tasks.
-
-      There are no hard rules as to what tasks require their own topic. It is judged on a case by case basis by those working on the task and by the moderators.
-
-      Generally speaking work should relate to plan(s) in the #plans, however this will not be true in all cases.
-
   guidelines_topic:
     title: "FAQ/Guidelines"
     body: |
@@ -147,6 +74,208 @@ en:
 
       We have a [Terms of Service](/tos) describing your (and our) behavior and rights related to content, privacy, and laws. To use this service, you must agree to abide by our [TOS](/tos).
 
+  help_welcome:
+    title: "About Help"
+    body: |
+      Here you can post anything about Civically you're having trouble with. For example:
+
+      * You can't figure out how to do something
+
+      * You think there is a technical issue with Civically
+
+      * You have an issue or question, but you're not sure where to post it
+
+      The Civically team check #help frequently, but any member of the Civically community can respond if they can be of assistance.
+
+      ### Sensitive or Private Matters
+      If you need to discuss a sensitive or private matter please send a private message to your place moderator.
+
+      If there is an issue with messaging your place moderator about the matter, you can send a private message to a site moderator.
+
+      If you have tried messaging both your place moderator and a site moderator about a matter and you still have an issue, please contact sensitivematter@trycivically.com
+
+  how_to_welcome:
+    title: "About How To"
+    body: |
+      Here you will find topics about how to use Civically. In each topic the first post is a step by step description of the functionality.
+
+      You can ask questions about the relevant functionality by replying to the post. Discussions about the policy behind the functionality should be raised in a relevant topic in #help:policies.
+
+  petitions_welcome:
+    title: "About Petitions"
+    body: |
+      Here you will find petitions that concern all of Civically. Petitions for:
+
+      * #petitions:place
+
+      * #petitions:app
+
+      Petitions that are specific to a place, e.g. the creation of a new group for a place, can be found in the place itself.
+
+  plans_welcome:
+    title: "About Plans"
+    body: |
+      Civically has both open source code and an open product. This means that all the details of Civically’s product management are available on Civically itself and can be contributed to by anybody. #plans is where that work happens.
+
+      ### Product management
+
+      ‘Product management’ in technology can refer to a variety of work. The most common aspects are feature development, project management, user experience and analytics. It can also include marketing, research, customer relations, and other business roles. It is typically a role that seeks synthesis between the various disciplines and resources that are part of a successful product.
+
+      Topics in #plans are not strictly limited to 'product management', however it is useful way to think about the role of planning in Civically.
+
+      ### Workflow
+
+      Work starts with users or civically team members making plans or proposals here in #plans. Plans should be as specific as possible and should be largely descriptive. Other users can respond and discuss the plan, and ‘upvote’ the plan to show their support.
+
+      A member of the Civically team will decide what plans will be worked on based on the overall goals of the product, the details of the plan and the support it has received. Once a proposed plan has been selected, it is broken down into task(s) which are posted in #work.
+
+      There are no hard and fast rules as to what plans require their own topic. It is judged on a case by case basis by those creating the topic and by the moderators.
+
+  plugins_welcome:
+    title: "About Plugins"
+    body: |
+      All of the Discourse plugins that combine to create the Civically platform are open source and are open to contributions from anybody. We encourage and welcome pull requests on all plugins. All PRs should comply with the [Civically Development Contribution Guidelines](https://trycivically.com/t/civically-development-contribution-guidelines).
+
+      There is an organisational division between standard plugins, which typically add new features, and ‘extension’ plugins, which typically contain minor changes and/or extend other plugins. This is not a bright-line distinction; some standard plugins may become extensions and some extensions may become plugins. The division is organisational only: both types are, technically speaking, Discourse plugins.
+
+      There is also a division between generalised plugins (‘discourse-’, or ‘x-discourse-’), which can be used on any Discourse instance, and Civically plugins (‘civically-’, or ‘x-civically-’), which are designed specifically for Civically.
+
+      Civically-specific plugins or extensions can be used in another Discourse instance if you know what you’re doing, but they are not currently designed that way. If you do adapt a Civically plugin or extension for your own purposes, we kindly ask that you do so by generalising the functionality so that others may also use it.
+
+      It is useful to think of Civically’s plugins as being divided into three groups: Discourse plugins, Civically plugins and Extensions.
+
+      ### Discourse Plugins
+
+      These plugins can be used on any instance of Discourse right now, and most are already used on a variety of different Discourse instances. Each of these has an existing topic on meta.discourse.org, which is (and will remain) the canonical place for discussion about the plugin:
+
+      * [Custom Layouts](https://meta.discourse.org/t/custom-layouts-plugin/55208)
+      * [Ratings](https://meta.discourse.org/t/topic-ratings-plugin/39578)
+      * [Locations](https://meta.discourse.org/t/locations-plugin/69742)
+      * [Events](https://meta.discourse.org/t/events-plugin-calendar/69776)
+      * [Elections](https://meta.discourse.org/t/elections-plugin/68521)
+      * [Topic List Previews](https://meta.discourse.org/t/topic-list-previews/41630)
+      * [Custom Wizard](https://meta.discourse.org/t/custom-wizard-plugin/73345)
+      * [Category Moderator Lite](https://meta.discourse.org/t/category-moderator-lite/67305)
+      * [Solved](https://meta.discourse.org/c/plugin/solved)
+      * [Voting](https://meta.discourse.org/c/plugin/voting)
+
+      ### Civically Plugins
+
+      The goal is to generalise the functionality of these plugins and make the Civically-specific aspects settings, translation files or isolated in a Civically-specific extension. PRs that further that goal are particularly welcome. The current place to discuss these plugins is the relevant plugin topic here on Civically:
+
+      * [Civically App](https://github.com/civicallyhq/civically-app)
+      * [Civically Site](https://github.com/civicallyhq/civically-site)
+      * [Civically Place](https://github.com/civicallyhq/civically-place)
+      * [Civically Petition](https://github.com/civicallyhq/civically-petition)
+      * [Civically Menus](https://github.com/civicallyhq/civically-menus)
+      * [Civically Layout](https://github.com/civicallyhq/civically-layout)
+      * [Civically User](https://github.com/civicallyhq/civically-user)
+      * [Civically Composer Addons](https://github.com/civicallyhq/civically-composer-addons)
+      * [Civically Landing Page](https://github.com/civicallyhq/civically-landing-page)
+
+      ### Extensions
+
+      Some of these extend other plugins and some extend core Discourse functionality. Most are specific to Civically (i.e. ‘x-civically-’) and are likely to remain so, although we will keep looking for opportunities to generalise the functionality where possible:
+
+      * [Discourse Poll Extension](https://github.com/angusmcleod/x-discourse-poll)
+      * [Civically Poll Extension](https://github.com/civicallyhq/x-civically-poll)
+      * [Civically Voting Extension](https://github.com/civicallyhq/x-civically-voting)
+      * [Civically Solved Extension](https://github.com/civicallyhq/x-civically-solved)
+      * [Civically Search Extension](https://github.com/civicallyhq/x-civically-search)
+      * [Civically Topic Extension](https://github.com/civicallyhq/x-civically-topic)
+      * [Civically Group Extension](https://github.com/civicallyhq/x-civically-group)
+
+  policies_welcome:
+    title: "About Policies"
+    body: |
+      Here you will find policies about using Civically. In each topic the policy is in the first post of the topic.
+
+      You can discuss the policy by replying to the policy post. Discussion should be about the content of the policy, not how to use the functionality the policy relates to.
+
+  privacy_topic:
+    title: "Privacy Policy"
+    body: |
+      <a name="collect"></a>
+
+      ## [What information do we collect?](#collect)
+
+      We collect information from you when you register on our site and gather data when you participate in the forum by reading, writing, and evaluating the content shared here.
+
+      When registering on our site, you may be asked to enter your name and e-mail address. You may, however, visit our site without registering. Your e-mail address will be verified by an email containing a unique link. If that link is visited, we know that you control the e-mail address.
+
+      When registered and posting, we record the IP address that the post originated from. We also may retain server logs which include the IP address of every request to our server.
+
+      <a name="use"></a>
+
+      ## [What do we use your information for?](#use)
+
+      Any of the information we collect from you may be used in one of the following ways:
+
+      *   To personalize your experience &mdash; your information helps us to better respond to your individual needs.
+      *   To improve our site &mdash; we continually strive to improve our site offerings based on the information and feedback we receive from you.
+      *   To improve customer service &mdash; your information helps us to more effectively respond to your customer service requests and support needs.
+      *   To send periodic emails &mdash; The email address you provide may be used to send you information, notifications that you request about changes to topics or in response to your user name, respond to inquiries, and/or other requests or questions.
+
+      <a name="protect"></a>
+
+      ## [How do we protect your information?](#protect)
+
+      We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or access your personal information.
+
+      <a name="data-retention"></a>
+
+      ## [What is your data retention policy?](#data-retention)
+
+      We will make a good faith effort to:
+
+      *   Retain server logs containing the IP address of all requests to this server no more than 90 days.
+      *   Retain the IP addresses associated with registered users and their posts no more than 5 years.
+
+      <a name="cookies"></a>
+
+      ## [Do we use cookies?](#cookies)
+
+      Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow). These cookies enable the site to recognize your browser and, if you have a registered account, associate it with your registered account.
+
+      We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. We may contract with third-party service providers to assist us in better understanding our site visitors. These service providers are not permitted to use the information collected on our behalf except to help us conduct and improve our business.
+
+      <a name="disclose"></a>
+
+      ## [Do we disclose any information to outside parties?](#disclose)
+
+      We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+
+      <a name="third-party"></a>
+
+      ## [Third party links](#third-party)
+
+      Occasionally, at our discretion, we may include or offer third party products or services on our site. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
+
+      <a name="coppa"></a>
+
+      ## [Children's Online Privacy Protection Act Compliance](#coppa)
+
+      Our site, products and services are all directed to people who are at least 13 years old or older. If this server is in the USA, and you are under the age of 13, per the requirements of COPPA ([Children's Online Privacy Protection Act](https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act)), do not use this site.
+
+      <a name="online"></a>
+
+      ## [Online Privacy Policy Only](#online)
+
+      This online privacy policy applies only to information collected through our site and not to information collected offline.
+
+      <a name="consent"></a>
+
+      ## [Your Consent](#consent)
+
+      By using our site, you consent to our web site privacy policy.
+
+      <a name="changes"></a>
+
+      ## [Changes to our Privacy Policy](#changes)
+
+      If we decide to change our privacy policy, we will post those changes on this page.
+
+      This document is CC-BY-SA. It was last updated May 31, 2013.
 
   tos_topic:
     title: "Terms of Service"
@@ -253,87 +382,11 @@ en:
 
       Originally adapted from the [WordPress Terms of Service](http://en.wordpress.com/tos/).
 
-  privacy_topic:
-    title: "Privacy Policy"
+  work_welcome:
+    title: "About Work"
     body: |
-      <a name="collect"></a>
+      #work is where work on Civically is done. Work can be development, design, or anything else for which there are defined, discrete tasks.
 
-      ## [What information do we collect?](#collect)
+      There are no hard rules as to what tasks require their own topic. It is judged on a case by case basis by those working on the task and by the moderators.
 
-      We collect information from you when you register on our site and gather data when you participate in the forum by reading, writing, and evaluating the content shared here.
-
-      When registering on our site, you may be asked to enter your name and e-mail address. You may, however, visit our site without registering. Your e-mail address will be verified by an email containing a unique link. If that link is visited, we know that you control the e-mail address.
-
-      When registered and posting, we record the IP address that the post originated from. We also may retain server logs which include the IP address of every request to our server.
-
-      <a name="use"></a>
-
-      ## [What do we use your information for?](#use)
-
-      Any of the information we collect from you may be used in one of the following ways:
-
-      *   To personalize your experience &mdash; your information helps us to better respond to your individual needs.
-      *   To improve our site &mdash; we continually strive to improve our site offerings based on the information and feedback we receive from you.
-      *   To improve customer service &mdash; your information helps us to more effectively respond to your customer service requests and support needs.
-      *   To send periodic emails &mdash; The email address you provide may be used to send you information, notifications that you request about changes to topics or in response to your user name, respond to inquiries, and/or other requests or questions.
-
-      <a name="protect"></a>
-
-      ## [How do we protect your information?](#protect)
-
-      We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or access your personal information.
-
-      <a name="data-retention"></a>
-
-      ## [What is your data retention policy?](#data-retention)
-
-      We will make a good faith effort to:
-
-      *   Retain server logs containing the IP address of all requests to this server no more than 90 days.
-      *   Retain the IP addresses associated with registered users and their posts no more than 5 years.
-
-      <a name="cookies"></a>
-
-      ## [Do we use cookies?](#cookies)
-
-      Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow). These cookies enable the site to recognize your browser and, if you have a registered account, associate it with your registered account.
-
-      We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. We may contract with third-party service providers to assist us in better understanding our site visitors. These service providers are not permitted to use the information collected on our behalf except to help us conduct and improve our business.
-
-      <a name="disclose"></a>
-
-      ## [Do we disclose any information to outside parties?](#disclose)
-
-      We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
-
-      <a name="third-party"></a>
-
-      ## [Third party links](#third-party)
-
-      Occasionally, at our discretion, we may include or offer third party products or services on our site. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
-
-      <a name="coppa"></a>
-
-      ## [Children's Online Privacy Protection Act Compliance](#coppa)
-
-      Our site, products and services are all directed to people who are at least 13 years old or older. If this server is in the USA, and you are under the age of 13, per the requirements of COPPA ([Children's Online Privacy Protection Act](https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act)), do not use this site.
-
-      <a name="online"></a>
-
-      ## [Online Privacy Policy Only](#online)
-
-      This online privacy policy applies only to information collected through our site and not to information collected offline.
-
-      <a name="consent"></a>
-
-      ## [Your Consent](#consent)
-
-      By using our site, you consent to our web site privacy policy.
-
-      <a name="changes"></a>
-
-      ## [Changes to our Privacy Policy](#changes)
-
-      If we decide to change our privacy policy, we will post those changes on this page.
-
-      This document is CC-BY-SA. It was last updated May 31, 2013.
+      Generally speaking work should relate to plan(s) in the #plans, however this will not be true in all cases.
