@@ -9,6 +9,7 @@ register_asset 'stylesheets/civically-site.scss'
 after_initialize do
   SiteSetting.title = 'Civically'
   SiteSetting.allow_uncategorized_topics = false
+  SiteSetting.events_add_to_calendar = true
 
   if Rails.env.development?
     SiteSetting.port = 3000
