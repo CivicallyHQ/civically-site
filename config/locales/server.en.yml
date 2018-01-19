@@ -134,7 +134,7 @@ en:
   plugins_welcome:
     title: "About Plugins"
     body: |
-      All of the Discourse plugins that combine to create the Civically platform are open source and are open to contributions from anybody. We encourage and welcome pull requests on all plugins. All PRs should comply with the [Civically Development Contribution Guidelines](https://trycivically.com/t/civically-development-contribution-guidelines).
+      All of the Discourse plugins that combine to create the Civically platform are open source and are open to contributions from anybody. We encourage and welcome pull requests on all plugins. All PRs should comply with the [Civically Development Contribution Policy](/t/development-contribution-policy).
 
       There is an organisational division between standard plugins, which typically add new features, and ‘extension’ plugins, which typically contain minor changes and/or extend other plugins. This is not a bright-line distinction; some standard plugins may become extensions and some extensions may become plugins. The division is organisational only: both types are, technically speaking, Discourse plugins.
 
