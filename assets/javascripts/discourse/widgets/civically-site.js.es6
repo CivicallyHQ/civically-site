@@ -69,7 +69,7 @@ export default createWidget('civically-site', {
     }
 
     this.store.findFiltered('topicList', { filter, params }).then((list) => {
-      this.state.items = list.topics;
+      this.state.items = list.topics.slice(0,5);
       this.state.loading = false;
       this.scheduleRerender();
     });
