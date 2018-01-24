@@ -1,6 +1,12 @@
 en:
   js:
     civically:
+      about: |
+        <p>Civically's mission is to bring balance to the relationship between citizens and their government, their legal system and their community.</p>
+
+        <p>Like everyone else, Civically team members each hold personal views on policies and political movements, but we strive to keep these seperate from our work on Civically. We are focused on systems rather than politics.</p>
+
+        <p>We are currently registered as a corporation in Australia and plan to have revenue. What degree of profit we make and how we use it, is yet to be determined. Like everything in Civically, you can <a href='/t/how-civically-should-sustain-itself' class='p-link' target='_blank'>help to craft those plans</a>.</p>
       coming_soon: "Coming Soon"
       list:
         petition:
@@ -17,3 +23,5 @@ en:
           help: "Help topics"
         none: "No current topics."
         more: "More"
+      team:
+        title: "Our Team"
