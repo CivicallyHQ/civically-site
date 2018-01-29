@@ -110,14 +110,17 @@ export default createWidget('civically-site', {
   html(attrs, state) {
     const loading = state.loading;
 
-    let contents = [];
+    let contents = [
+      h('div.widget-label', I18n.t('civically.title')),
+      h('div.widget-multi-title', [
+        this.buildTitle('petition'),
+        this.buildTitle('plan'),
+        this.buildTitle('work'),
+        this.buildTitle('help')
+      ])
+    ];
 
-    contents.push(h('div.widget-multi-title', [
-      this.buildTitle('petition'),
-      this.buildTitle('plan'),
-      this.buildTitle('work'),
-      this.buildTitle('help')
-    ]));
+    contents.push();
 
     let itemList = [];
     if (loading) {
@@ -132,6 +135,7 @@ export default createWidget('civically-site', {
       h('div.widget-list', [
         itemList,
         h('div.widget-list-controls', this.attach('link', {
+          className: 'p-link no-underline',
           href: `/${moreLink}`,
           label: 'civically.list.more'
         }))
