@@ -2,6 +2,7 @@ import { createWidget } from 'discourse/widgets/widget';
 import { iconNode } from 'discourse-common/lib/icon-library';
 import DiscourseURL from 'discourse/lib/url';
 import { h } from 'virtual-dom';
+import { buildTitle, clearUnreadList } from 'discourse/plugins/civically-layout/discourse/lib/utilities';
 
 const typeUrl = function(type) {
   let filter = '';
@@ -85,22 +86,6 @@ export default createWidget('civically-site', {
     }
   },
 
-  buildTitle(type) {
-    const currentType = this.state.currentType;
-    const active = currentType === type;
-
-    let classes = 'list-title';
-    if (active) classes += ' active';
-
-    return this.attach('link', {
-      action: 'showList',
-      actionParam: type,
-      title: `civically.list.${type}.help`,
-      label: `civically.list.${type}.title`,
-      className: classes
-    });
-  },
-
   showList(currentType) {
     this.state.currentType = currentType;
     this.state.loading = true;
@@ -113,20 +98,19 @@ export default createWidget('civically-site', {
     let contents = [
       h('div.widget-label', I18n.t('civically.title')),
       h('div.widget-multi-title', [
-        this.buildTitle('petition'),
-        this.buildTitle('plan'),
-        this.buildTitle('work'),
-        this.buildTitle('help')
+        buildTitle(this, 'civically.list', 'petition'),
+        buildTitle(this, 'civically.list', 'plan'),
+        buildTitle(this, 'civically.list', 'work'),
+        buildTitle(this, 'civically.list', 'help')
       ])
     ];
-
-    contents.push();
 
     let itemList = [];
     if (loading) {
       itemList = h('div.spinner.small');
       this.getItems(state.currentType);
     } else {
+      clearUnreadList(this, state.currentType);
       itemList = h('ul', this.itemList());
     };
 
