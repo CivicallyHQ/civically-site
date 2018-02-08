@@ -119,7 +119,7 @@ export default createWidget('civically-site', {
       h('div.widget-list', [
         itemList,
         h('div.widget-list-controls', this.attach('link', {
-          className: 'p-link no-underline',
+          className: 'p-link',
           href: `/${moreLink}`,
           label: 'civically.list.more'
         }))
