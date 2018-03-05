@@ -24,6 +24,10 @@
   margin-top: 30px;
 }
 
+.body-page {
+  margin-bottom: 60px;
+}
+
 .body-page ul li p {
   font-size: 1em;
 }
@@ -34,4 +38,10 @@
 
 .d-header-icons .icon {
   border-radius: 4px 4px 0 0;
+}
+
+.static-image {
+  position: fixed;
+  right: calc(50% - 550px);
+  bottom: 100px;
 }

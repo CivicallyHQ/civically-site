@@ -2,6 +2,8 @@
   <div class='container'>
     <div class='contents clearfix body-page'>
 
+      {{static-image}}
+
       <ul class="nav-pills">
         <li class="nav-item-about">{{#link-to 'about' class="active"}}{{i18n 'about.simple_title'}}{{/link-to}}</li>
         {{#if faqOverriden}}
@@ -15,10 +17,10 @@
       </ul>
 
       <section class='about description'>
-        {{{i18n 'civically.about'}}}
+        {{description}}
       </section>
 
-      {{#if model.admins}}
+      {{!-- {{#if model.admins}}
         <section class='about admins'>
           <h3>{{i18n 'civically.team.title'}}</h3>
 
@@ -28,15 +30,9 @@
           <div class='clearfix'></div>
 
         </section>
-      {{/if}}
+      {{/if}} --}}
 
-      {{#if contactInfo}}
-        <section class='about contact'>
-          <h3>{{d-icon "envelope-o"}} {{i18n 'about.contact'}}</h3>
-          <p>{{{contactInfo}}}</p>
-        </section>
-      {{/if}}
-
+      {{d-button action='contact' label='landing.contact.title' class='btn-primary btn-large'}}
     </div>
   </div>
 {{/d-section}}

@@ -1,11 +1,39 @@
 en:
   js:
     civically:
-      title: "Civically"
       about: |
-        <p>Civically's mission is to make government work, law easier and community stronger.</p>
 
-        <p>We are currently registered as a corporation in Australia and plan to have revenue to sustain our mission. Like everything in Civically, you can <a href='/t/how-civically-should-sustain-itself' class='p-link' target='_blank'>help to craft those plans</a>.</p>
+        ## [We are the world's first scalable civic platform.](#scalable)
+
+        Compared with social and consumer technology, civic technology is disparate, out-of-date, unsustainable or dominated by legacy solutions. Civically is a modern web platform comparable to the biggest social and consumer platforms, but built in the spirit of the civic sector.
+
+        * Any government, big or small, can provide industry-leading online services cheaply and efficiently.
+
+        * Online legal services, particularly services that expand the legal franchise, can be both targeted at specific jurisdictions and scaled into sustainable solutions.
+
+        * Citizens can easily share knowledge, experience and experiences with people in their local community.
+
+        ## [We have developed a disruptive business model to create social benefit.](#disruptive)
+
+        Our model for delivering online civic services is cheaper and more efficient than any existing model, but we're not buiding a unicorn. Civically is planned, built and run collaboratively for social benefit.
+
+        * Our organisation and product plans are developed collaboratively with our community.
+
+        * Our code is 100% open source and open to contributions.
+
+        * Our platform is grown and run by its users.
+
+        ## [We believe that the collaborative potential of the internet is undervalued.](#collaborative)
+
+        The technology industry, and the internet itself, would be fundamentally different without open source software, which built for free in a communal fashion. The government and legal sectors will benefit from taking its proven methods of communal value creation seriously.
+
+        * We are building support for true co-production of government and community services.
+
+        * We make it possible for informal experts to be involved in the legal ecosystem.
+
+        * We are developing new ways of compensating both technical and non-technical contributors to civic projects.
+
+
       coming_soon: "Coming Soon"
       list:
         petition:
