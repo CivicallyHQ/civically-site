@@ -96,7 +96,7 @@ export default createWidget('civically-site', {
     const loading = state.loading;
 
     let contents = [
-      h('div.widget-label', I18n.t('civically.title')),
+      h('div.widget-label', this.siteSettings.title),
       h('div.widget-multi-title', [
         buildTitle(this, 'civically.list', 'petition'),
         buildTitle(this, 'civically.list', 'plan'),

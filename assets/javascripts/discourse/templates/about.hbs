@@ -2,7 +2,9 @@
   <div class='container'>
     <div class='contents clearfix body-page'>
 
-      {{static-image}}
+      {{#unless site.mobileView}}
+        {{static-image name='owl'}}
+      {{/unless}}
 
       <ul class="nav-pills">
         <li class="nav-item-about">{{#link-to 'about' class="active"}}{{i18n 'about.simple_title'}}{{/link-to}}</li>

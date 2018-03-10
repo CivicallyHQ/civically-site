@@ -45,3 +45,38 @@
   right: calc(50% - 550px);
   bottom: 100px;
 }
+
+.missing-translations-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+
+.missing-translations {
+  position: relative;
+
+  .btn {
+    box-shadow: shadow("dropdown");
+  }
+
+  .description {
+    position: absolute;
+    bottom: 32px;
+    right: 0;
+    box-shadow: shadow("dropdown");
+    border: 1px solid $primary-low;
+    padding: 8px 12px;
+    background-color: $secondary;
+    width: 300px;
+    max-width: 90vw;
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  mark {
+    background-color: initial;
+  }
+}
