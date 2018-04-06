@@ -1,3 +1,4 @@
+import { createAppWidget } from 'discourse/plugins/civically-app/discourse/widgets/app-widget';
 import { createWidget } from 'discourse/widgets/widget';
 import { iconNode } from 'discourse-common/lib/icon-library';
 import DiscourseURL from 'discourse/lib/url';
@@ -50,10 +51,7 @@ createWidget('list-item', {
   }
 });
 
-export default createWidget('civically-site', {
-  tagName: 'div.civically-site.widget-container',
-  buildKey: () => 'civically-site',
-
+export default createAppWidget('civically-site', {
   defaultState() {
     return {
       currentType: 'petition',
@@ -82,7 +80,7 @@ export default createWidget('civically-site', {
     if (items && items.length > 0) {
       return items.map((item) => this.attach('list-item', { item, type }));
     } else {
-      return h('div.no-items', I18n.t('civically.list.none'));
+      return h('div.no-items', I18n.t('app.civically_site.list.none'));
     }
   },
 
@@ -92,19 +90,24 @@ export default createWidget('civically-site', {
     this.scheduleRerender();
   },
 
-  html(attrs, state) {
-    const loading = state.loading;
+  header() {
+    return [
+      h('div.app-title', I18n.t('app.civically_site.title'))
+    ];
+  },
 
+  content(attrs, state) {
+    const listScope = 'app.civically_site.list';
     let contents = [
-      h('div.widget-label', this.siteSettings.title),
       h('div.widget-multi-title', [
-        buildTitle(this, 'civically.list', 'petition'),
-        buildTitle(this, 'civically.list', 'plan'),
-        buildTitle(this, 'civically.list', 'work'),
-        buildTitle(this, 'civically.list', 'help')
+        buildTitle(this, listScope, 'petition'),
+        buildTitle(this, listScope, 'plan'),
+        buildTitle(this, listScope, 'work'),
+        buildTitle(this, listScope, 'help')
       ])
     ];
 
+    const loading = state.loading;
     let itemList = [];
     if (loading) {
       itemList = h('div.spinner.small');
@@ -121,7 +124,7 @@ export default createWidget('civically-site', {
         h('div.widget-list-controls', this.attach('link', {
           className: 'p-link',
           href: `/${moreLink}`,
-          label: 'civically.list.more'
+          label: 'app.civically_site.list.more'
         }))
       ])
     ]);

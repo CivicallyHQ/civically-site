@@ -1,4 +1,5 @@
 # name: civically-site
+# app: internal
 # about: Civically site-specific functionality
 # version: 0.1
 # authors: angus

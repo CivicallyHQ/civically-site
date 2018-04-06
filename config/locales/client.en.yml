@@ -35,21 +35,6 @@ en:
 
 
       coming_soon: "Coming Soon"
-      list:
-        petition:
-          title: "Petitions"
-          help: "Site-wide Petitions"
-        plan:
-          title: "Plans"
-          help: "Plans about Civically"
-        work:
-          title: "Work"
-          help: "Work on Civically"
-        help:
-          title: "Help"
-          help: "Help topics"
-        none: "No current topics."
-        more: "More"
       team:
         title: "Our Team"
       translate:
@@ -57,3 +42,24 @@ en:
         description: We're missing {{missingCount}} translations of English to {{localeName}} on this page. Can you spot them?
         help: "[Help to translate Civically](https://www.transifex.com/civically/public/) and you can earn translator badges and more."
     faq: "Guidelines"
+
+    app:
+      civically_site:
+        title: "Civically"
+        locked: "Set your place or vote for a place petition to unlock the Civically App."
+        icon: ':earth_americas:'
+        list:
+          petition:
+            title: "Petitions"
+            help: "Site-wide Petitions"
+          plan:
+            title: "Plans"
+            help: "Plans about Civically"
+          work:
+            title: "Work"
+            help: "Work on Civically"
+          help:
+            title: "Help"
+            help: "Help topics"
+          none: "No current topics."
+          more: "More"
