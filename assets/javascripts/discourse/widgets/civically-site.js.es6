@@ -3,7 +3,7 @@ import { createWidget } from 'discourse/widgets/widget';
 import { iconNode } from 'discourse-common/lib/icon-library';
 import DiscourseURL from 'discourse/lib/url';
 import { h } from 'virtual-dom';
-import { buildTitle, clearUnreadList } from 'discourse/plugins/civically-layout/discourse/lib/utilities';
+import { buildTitle, clearUnreadList } from 'discourse/plugins/civically-navigation/discourse/lib/utilities';
 
 const typeUrl = function(type) {
   let filter = '';
@@ -96,7 +96,8 @@ export default createAppWidget('civically-site', {
     ];
   },
 
-  content(attrs, state) {
+  contents() {
+    const state = this.state;
     const listScope = 'app.civically_site.list';
     let contents = [
       h('div.widget-multi-title', [
