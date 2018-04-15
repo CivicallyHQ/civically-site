@@ -54,7 +54,7 @@ createWidget('list-item', {
 export default createAppWidget('civically-site', {
   defaultState() {
     return {
-      currentType: 'petition',
+      currentListType: 'petition',
       loading: true
     };
   },
@@ -76,7 +76,7 @@ export default createAppWidget('civically-site', {
 
   itemList() {
     const items = this.state.items;
-    const type = this.state.currentType;
+    const type = this.state.currentListType;
     if (items && items.length > 0) {
       return items.map((item) => this.attach('list-item', { item, type }));
     } else {
@@ -84,8 +84,8 @@ export default createAppWidget('civically-site', {
     }
   },
 
-  showList(currentType) {
-    this.state.currentType = currentType;
+  showList(currentListType) {
+    this.state.currentListType = currentListType;
     this.state.loading = true;
     this.scheduleRerender();
   },
@@ -112,20 +112,20 @@ export default createAppWidget('civically-site', {
     let itemList = [];
     if (loading) {
       itemList = h('div.spinner.small');
-      this.getItems(state.currentType);
+      this.getItems(state.currentListType);
     } else {
-      clearUnreadList(this, state.currentType);
+      clearUnreadList(this, state.currentListType);
       itemList = h('ul', this.itemList());
     };
 
-    const moreLink = typeUrl(state.currentType);
+    const moreLink = typeUrl(state.currentListType);
     contents.push([
       h('div.widget-list', [
         itemList,
         h('div.widget-list-controls', this.attach('link', {
           className: 'p-link',
           href: `/${moreLink}`,
-          label: 'app.civically_site.list.more'
+          label: 'more'
         }))
       ])
     ]);

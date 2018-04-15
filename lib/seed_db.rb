@@ -16,7 +16,13 @@ unless SiteSetting.petition_category_id.to_i > 1
       'tl1_vote_limit': 1,
       'tl2_vote_limit': 1,
       'tl3_vote_limit': 1,
-      'tl4_vote_limit': 1
+      'tl4_vote_limit': 1,
+      'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail_width': 600,
+      'topic_list_thumbnail_height': 300
     })
   if category.save
     t = Topic.new(
@@ -51,7 +57,13 @@ unless Category.find_by(name: 'Work')
     text_color: 'FFFFF',
     topic_featured_link_allowed: true,
     custom_fields: {
-      'meta': true
+      'meta': true,
+      'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail_width': 600,
+      'topic_list_thumbnail_height': 300
     })
   if category.save
     t = Topic.new(
@@ -87,7 +99,13 @@ unless Category.find_by(name: 'Plugins')
     text_color: 'FFFFF',
     parent_category_id: work_category.id,
     custom_fields: {
-      'meta': true
+      'meta': true,
+      'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail_width': 600,
+      'topic_list_thumbnail_height': 300
     }
   )
   if category.save
@@ -122,7 +140,13 @@ unless Category.find_by(name: 'Plans')
     topic_featured_link_allowed: true,
     custom_fields: {
       'meta': true,
-      'enable_topic_voting': "true"
+      'enable_topic_voting': "true",
+      'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail_width': 600,
+      'topic_list_thumbnail_height': 300
     })
   if category.save
     t = Topic.new(
@@ -156,7 +180,13 @@ unless Category.find_by(name: 'Help')
     custom_fields: {
       'meta': true,
       'enable_accepted_answers': true,
-      'topic_types': 'question'
+      'topic_types': 'question',
+      'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail_width': 600,
+      'topic_list_thumbnail_height': 300
     }
   )
   if category.save
@@ -193,7 +223,13 @@ unless Category.find_by(name: 'Policies')
     text_color: 'FFFFF',
     parent_category_id: help_category.id,
     custom_fields: {
-      'meta': true
+      'meta': true,
+      'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail_width': 600,
+      'topic_list_thumbnail_height': 300
     }
   )
   if category.save
@@ -228,7 +264,13 @@ unless Category.find_by(name: 'How To')
     text_color: 'FFFFF',
     parent_category_id: help_category.id,
     custom_fields: {
-      'meta': true
+      'meta': true,
+      'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
+      'topic_list_thumbnail_width': 600,
+      'topic_list_thumbnail_height': 300
     }
   )
   if category.save

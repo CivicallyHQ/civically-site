@@ -51,9 +51,27 @@ export default {
 
     withPluginApi('0.8.12', api => {
       api.modifyClass('controller:application', {
+        @on('init')
+        setupTranslations() {
+          this.positionTranslations();
+          $(window).on('resize', Ember.run.bind(this, this.positionTranslations));
+        },
+
         @observes('currentPath')
-        clearMissingTranslations() {
+        updateTranslations() {
           I18n.missing_translations.clear();
+          this.positionTranslations();
+        },
+
+        positionTranslations() {
+          if (!this.site.mobileView) {
+            Ember.run.scheduleOnce('afterRender', () => {
+              const $translations = $('.missing-translations-container');
+              const $outlet = $('#main-outlet');
+              const offset = ($(window).width() - ($outlet.offset().left + $outlet.outerWidth()))
+              $translations.css('right', offset);
+            });
+          }
         }
       });
     });
