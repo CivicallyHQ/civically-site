@@ -50,7 +50,7 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 999;
+  z-index: 100;
 }
 
 .missing-translations {
@@ -78,5 +78,94 @@
 
   mark {
     background-color: initial;
+  }
+}
+
+/// Civically layout changes
+
+body {
+  background-color: #e6ecf0;
+
+  &.admin-interface {
+    background-color: $secondary;
+  }
+}
+
+.main-content.has-sidebars div.container.list-container {
+  border: none;
+  background-color: initial;
+
+  .discovery-title-composer .title-composer:not(.hide-input) {
+    border-left: 1px solid $primary-low;
+    border-right: 1px solid $primary-low;
+    border-top: 1px solid $primary-low;
+    border-radius: 4px 4px 0 0;
+  }
+
+  #list-area {
+    .show-more.has-topics {
+      position: initial;
+      top: initial;
+      padding-top: 10px;
+
+      .alert {
+        margin-bottom: 0;
+      }
+    }
+
+    &> .contents {
+      background-color: $secondary;
+      border-left: 1px solid $primary-low;
+      border-right: 1px solid $primary-low;
+
+      .topic-list {
+        margin: 0;
+
+        &>tbody {
+          border-top: 1px solid $primary-low;
+        }
+      }
+    }
+
+    &> .topic-list-bottom {
+      margin: 0;
+      background-color: $secondary;
+      border-left: 1px solid $primary-low;
+      border-right: 1px solid $primary-low;
+      border-bottom: 1px solid $primary-low;
+      border-radius: 0 0 4px 4px;
+    }
+  }
+}
+
+.main-content.topic.has-sidebars #topic-title .container div.title-wrapper {
+  width: initial;
+
+  .topic-category {
+    margin-top: 0;
+  }
+}
+
+.main-content.calendar {
+  background-color: $secondary;
+  padding: 10px 20px 20px 20px;
+
+  .category-dropdown {
+    top: 40px;
+  }
+}
+
+.main-content.place.set {
+  background-color: $secondary;
+}
+
+section.user-main {
+  background-color: $secondary;
+  padding: 20px;
+  border-radius: 4px;
+
+  .place-user-controls {
+    min-height: initial;
+    margin: 0;
   }
 }
