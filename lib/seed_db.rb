@@ -130,6 +130,74 @@ unless Category.find_by(name: 'Plugins')
   end
 end
 
+unless SiteSetting.app_petition_category_id.to_i > 1
+  category = Category.create(
+    user: Discourse.system_user,
+    name: 'App',
+    color: SecureRandom.hex(3),
+    permissions: { everyone: 2 },
+    allow_badges: true,
+    text_color: 'FFFFF',
+    topic_id: -1,
+    topic_featured_link_allowed: true,
+    parent_category_id: SiteSetting.petition_category_id,
+    custom_fields: {
+      'meta': true,
+      'enable_topic_voting': "true",
+      'petition_enabled': true,
+      'petition_vote_threshold': 100,
+      'tl0_vote_limit': 1,
+      'tl1_vote_limit': 1,
+      'tl2_vote_limit': 1,
+      'tl3_vote_limit': 1,
+      'tl4_vote_limit': 1
+    }
+  )
+
+  SiteSetting.app_petition_category_id = category.id
+end
+
+unless SiteSetting.app_category_id.to_i > 1
+  category = Category.create(
+    user: Discourse.system_user,
+    name: 'Apps',
+    color: SecureRandom.hex(3),
+    permissions: { everyone: 2 },
+    allow_badges: true,
+    text_color: 'FFFFF',
+    topic_id: -1,
+    topic_featured_link_allowed: true,
+    custom_fields: {
+      'meta': true,
+      'rating_enabled': true,
+      'topic_types': 'rating'
+    }
+  )
+
+  if category.save
+    SiteSetting.app_category_id = category.id
+
+    t = Topic.new(
+      title: I18n.t("about_apps.title"),
+      user: Discourse.system_user,
+      pinned_at: Time.now,
+      category_id: category.id
+    )
+    t.skip_callbacks = true
+    t.ignore_category_auto_close = true
+    t.delete_topic_timer(TopicTimer.types[:close])
+    t.save!(validate: false)
+
+    category.topic_id = t.id
+    category.save!
+
+    t.posts.create(
+      raw: I18n.t('about_apps.body'),
+      user: Discourse.system_user
+    )
+  end
+end
+
 unless Category.find_by(name: 'Plans')
   category = Category.create(
     user: Discourse.system_user,
@@ -296,17 +364,19 @@ unless Category.find_by(name: 'How To')
 end
 
 if lounge = Category.find_by(id: SiteSetting.lounge_category_id)
-  topic = Topic.find(lounge.topic_id)
-  Post.find_by(topic_id: topic.id).destroy
-  topic.destroy
+  if topic = Topic.find_by_id(lounge.topic_id)
+    Post.find_by(topic_id: topic.id).destroy
+    topic.destroy
+  end
   Topic.where(title: I18n.t('lounge_welcome.title')).destroy_all
   lounge.destroy
 end
 
 if feedback = Category.find_by(name: 'Site Feedback')
-  topic = Topic.find(feedback.topic_id)
-  Post.find_by(topic_id: topic.id).destroy
-  topic.destroy
+  if topic = Topic.find_by_id(feedback.topic_id)
+    Post.find_by(topic_id: topic.id).destroy
+    topic.destroy
+  end
   feedback.destroy
 end
 
@@ -316,4 +386,8 @@ end
 
 if topic = Topic.find_by(title: "READ ME FIRST: Admin Quick Start Guide")
   topic.destroy
+end
+
+unless Theme.exists?(name: "Civically Wizards")
+  RemoteTheme.import_theme("https://github.com/civicallyhq/civically-wizards")
 end
