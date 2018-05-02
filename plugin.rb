@@ -10,7 +10,9 @@ register_asset 'stylesheets/civically-site.scss'
 after_initialize do
   SiteSetting.title = 'Civically'
   SiteSetting.allow_uncategorized_topics = false
+  SiteSetting.tagging_enabled = true
   SiteSetting.events_add_to_calendar = true
+  SiteSetting.topic_list_tags_category_link = true
 
   if Rails.env.development?
     SiteSetting.port = 3000
@@ -24,7 +26,7 @@ after_initialize do
   add_to_serializer(:basic_category, :meta) { object.custom_fields['meta'] }
   add_to_class(:category, 'meta') { self.custom_fields['meta'] }
 
-  load File.expand_path('../lib/seed_db.rb', __FILE__)
+  register_seedfu_fixtures(Rails.root.join("plugins", "civically-site", "db", "fixtures").to_s)
 
   DiscourseEvent.trigger(:civically_site_ready)
 end

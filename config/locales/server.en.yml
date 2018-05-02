@@ -112,6 +112,16 @@ en:
 
       Petitions that are specific to a place, e.g. the creation of a new group for a place, can be found in the place itself.
 
+  place_petitions_welcome:
+    title: "About Place Petitions"
+    body: |
+      Here you will find petitions to add new places to Civically.
+
+  app_petitions_welcome:
+    title: "About App Petitions"
+    body: |
+      Here you will find petitions to add new apps to Civically.
+
   plans_welcome:
     title: "About Plans"
     body: |

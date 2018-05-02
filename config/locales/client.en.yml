@@ -62,3 +62,53 @@ en:
             title: "Help"
             help: "Help topics"
           none: "No current topics."
+
+    plans:
+      topic:
+        type:
+          general:
+            label: 'Plan'
+            description: 'Post a new plan.'
+            title_placeholder: "Plan title"
+            body_placeholder: 'Add the body of your plan.'
+    work:
+      topic:
+        type:
+          general:
+            label: 'Task'
+            description: 'Post a new task.'
+            title_placeholder: "Task title"
+            body_placeholder: 'Add a description of the task.'
+    plugins:
+      topic:
+        type:
+          general:
+            label: 'Plugin'
+            description: 'Post a new plugin.'
+            title_placeholder: "Plugin title"
+            body_placeholder: 'Add a description of the plugin.'
+    help:
+      topic:
+        type:
+          question:
+            label: 'Question'
+            description: 'Ask a question about Civically.'
+            title_placeholder: "Question title"
+            body_placeholder: 'Question body.'
+
+    policies:
+      topic:
+        type:
+          general:
+            label: 'Policy'
+            description: 'Add a new Civically Policy.'
+            title_placeholder: "Policy title"
+            body_placeholder: 'Policy body.'
+    how_to:
+      topic:
+        type:
+          general:
+            label: 'How To'
+            description: 'Add a new How To topic.'
+            title_placeholder: "How To title"
+            body_placeholder: 'How To body.'
