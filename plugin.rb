@@ -12,7 +12,6 @@ after_initialize do
   SiteSetting.allow_uncategorized_topics = false
   SiteSetting.tagging_enabled = true
   SiteSetting.events_add_to_calendar = true
-  SiteSetting.topic_list_tags_category_link = true
 
   if Rails.env.development?
     SiteSetting.port = 3000

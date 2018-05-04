@@ -86,7 +86,7 @@
 body {
   background-color: #e6ecf0;
 
-  &.admin-interface {
+  &.admin-interface, &.about-page, &.landing {
     background-color: $secondary;
   }
 }
@@ -150,7 +150,7 @@ body {
   background-color: $secondary;
   padding: 10px 20px 20px 20px;
 
-  .category-dropdown {
+  .nav-dropdown {
     top: 40px;
   }
 }
