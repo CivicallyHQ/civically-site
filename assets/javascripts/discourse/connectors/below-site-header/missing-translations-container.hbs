@@ -1,3 +1,5 @@
-{{#if hasMissing}}
-  {{missing-translations missing=missing}}
-{{/if}}
+{{#unless site.mobileView}}
+  {{#if hasMissing}}
+    {{missing-translations missing=missing}}
+  {{/if}}
+{{/unless}}

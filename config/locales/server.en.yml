@@ -74,6 +74,15 @@ en:
 
       We have a [Terms of Service](/tos) describing your (and our) behavior and rights related to content, privacy, and laws. To use this service, you must agree to abide by our [TOS](/tos).
 
+  run_welcome:
+    title: "About Run"
+    body: |
+      Here you will find topics about how we run Civically.
+
+      Most posts will belong in one of the sub-categories: #help, #how-to and #policies.
+
+      If your post doesn't not belong in any of those categories post it here in the #run category itself.
+
   help_welcome:
     title: "About Help"
     body: |

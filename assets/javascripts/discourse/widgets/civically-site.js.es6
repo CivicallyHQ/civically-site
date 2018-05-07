@@ -14,11 +14,11 @@ const typeUrl = function(type) {
     case 'plan':
       filter = 'c/plans';
       break;
-    case 'help':
-      filter = 'c/help';
-      break;
     case 'work':
       filter = 'c/work';
+      break;
+    case 'run':
+      filter = 'c/run';
       break;
   };
   return filter;
@@ -99,7 +99,7 @@ export default createAppWidget('civically-site', {
         buildTitle(this, listScope, 'petition'),
         buildTitle(this, listScope, 'plan'),
         buildTitle(this, listScope, 'work'),
-        buildTitle(this, listScope, 'help')
+        buildTitle(this, listScope, 'run')
       ])
     ];
 

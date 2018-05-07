@@ -72,6 +72,16 @@ export default {
               $translations.css('right', offset);
             });
           }
+        },
+
+        actions: {
+          routeToHelp() {
+            this.transitionToRoute('discovery.category', 'run', 'help').then(() => {
+              Ember.run.scheduleOnce('afterRender', () => {
+                $(".inline-composer input").focus();
+              })
+            })
+          }
         }
       });
     });

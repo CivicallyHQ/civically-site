@@ -81,6 +81,16 @@
   }
 }
 
+.help-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 1.7em;
+  padding: 10px 18px;
+  border-radius: 50%;
+  box-shadow: shadow("card");
+}
+
 /// Civically layout changes
 
 body {
