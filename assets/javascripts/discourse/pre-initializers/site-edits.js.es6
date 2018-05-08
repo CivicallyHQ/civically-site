@@ -30,6 +30,35 @@ export default {
           return !this.site.mobileView && path !== 'login';
         }
       });
+
+      const peopleImageRoutes = [
+        {
+          name: 'user',
+          afterElement: '.user-table'
+        },
+        {
+          name: 'group',
+          afterElement: '.user-table .wrapper'
+        }
+      ];
+
+      peopleImageRoutes.forEach((route) => {
+        api.modifyClass(`route:${route.name}`, {
+          renderTemplate() {
+            this.render('people-wrapper');
+          },
+
+          setupController(controller, model) {
+            controller.set('mainContent', this.routeName);
+
+            Ember.run.scheduleOnce('afterRender', () => {
+              $('.people-image').insertAfter(route.afterElement);
+            });
+
+            this._super(controller, model);
+          }
+        });
+      })
     });
 
     I18n.missing_translations = Ember.A();

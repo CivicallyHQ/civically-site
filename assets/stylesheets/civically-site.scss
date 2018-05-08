@@ -95,6 +95,56 @@
   height: 90px;
 }
 
+.place.set {
+  position: relative;
+
+  .people-image {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.user-main {
+  position: relative;
+
+  .paginated-topics-list, .user-stream {
+    margin-bottom: 120px;
+  }
+
+  .people-image {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+.groups-page section {
+  position: relative;
+
+  .groups-header + * {
+    margin-bottom: 130px;
+  }
+
+  .people-image {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.container.group {
+  div.user-table {
+    padding-bottom: 130px;
+  }
+
+  .people-image {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
 /// Civically layout changes
 
 body {
@@ -199,6 +249,12 @@ section.user-main {
 }
 
 .container.badges, .container.show-badge {
+  background-color: $secondary;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.queued-posts {
   background-color: $secondary;
   padding: 20px;
   border-radius: 4px;
