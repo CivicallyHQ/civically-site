@@ -1,1 +1,3 @@
-{{d-button class="btn-primary help-button" action='routeToHelp' icon='question'}}
+{{#if currentUser}}
+  {{d-button class="btn-primary help-button" action='routeToHelp' icon='question'}}
+{{/if}}
