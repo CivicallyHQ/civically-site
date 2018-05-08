@@ -91,12 +91,16 @@
   box-shadow: shadow("card");
 }
 
+.people-image {
+  height: 90px;
+}
+
 /// Civically layout changes
 
 body {
   background-color: #e6ecf0;
 
-  &.admin-interface, &.about-page, &.landing {
+  &.admin-interface, &.about-page, &.landing, &.static-faq, &.static-tos, &.static-privacy {
     background-color: $secondary;
   }
 }
@@ -177,5 +181,19 @@ section.user-main {
   .place-user-controls {
     min-height: initial;
     margin: 0;
+  }
+}
+
+.search-container {
+  background-color: $secondary;
+  padding: 20px;
+  border-radius: 4px;
+
+  #create-topic {
+    display: none;
+  }
+
+  .bulk-select {
+    margin-left: 0 !important;
   }
 }

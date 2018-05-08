@@ -106,7 +106,7 @@ en:
             label: 'Question'
             description: 'Ask a question about Civically.'
             title_placeholder: "What do you need help with?"
-            body_placeholder: 'Give some more detail.'
+            body_placeholder: 'Add some detail to your question.'
 
     policies:
       topic:
