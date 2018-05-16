@@ -50,7 +50,7 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 100;
+  z-index: 2;
 }
 
 .missing-translations {
@@ -108,7 +108,7 @@
 .user-main {
   position: relative;
 
-  .paginated-topics-list, .user-stream {
+  .paginated-topics-list, .user-stream, .user-table {
     margin-bottom: 120px;
   }
 

@@ -1,5 +1,5 @@
 # name: civically-site
-# app: system
+# app: store
 # about: Civically site-specific functionality
 # version: 0.1
 # authors: angus
@@ -12,6 +12,7 @@ after_initialize do
   SiteSetting.allow_uncategorized_topics = false
   SiteSetting.tagging_enabled = true
   SiteSetting.events_add_to_calendar = true
+  SiteSetting.limit_suggested_to_category = true
 
   if Rails.env.development?
     SiteSetting.port = 3000
