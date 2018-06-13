@@ -1,7 +1,9 @@
-import { default as computed, on } from 'ember-addons/ember-computed-decorators';
+import { default as computed, on, observes } from 'ember-addons/ember-computed-decorators';
 import { cookAsync } from 'discourse/lib/text';
 
 export default Ember.Component.extend({
+  router: Ember.inject.service('-routing'),
+  currentRoute: Ember.computed.alias('router.router.currentRouteName'),
   classNames: 'missing-translations',
   showDescription: false,
 
@@ -17,11 +19,14 @@ export default Ember.Component.extend({
     }
   },
 
-  @computed('missing.[]')
-  buttonLabel(missing) {
-    const missingCount = missing ? missing.length : 0;
-    this.set('missingCount',  missingCount);
-    return I18n.t('civically.translate.label', { missingCount });
+  @on('init')
+  @observes('missing.[].length')
+  setMissingCount() {
+    const count = this.get('missing.[].length')
+    const route = this.get('currentRoute');
+    if (route.indexOf('loading') === -1) {
+      Ember.run.scheduleOnce('afterRender', () => this.set('missingCount', count));
+    }
   },
 
   didInsertElement() {

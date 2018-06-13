@@ -9,9 +9,11 @@ en:
       team:
         title: "Our Team"
       translate:
-        label: "{{missingCount}} Missing Translations"
-        description: We're missing {{missingCount}} translations of English to {{localeName}} on this page. Can you spot them?
-        help: "[Help to translate Civically](https://www.transifex.com/civically/public/) and you can earn translator badges and more."
+        description: We're missing {{missingCount}} translations of English to {{localeName}} on this page.
+        help: "[Help to translate Civically](https://www.transifex.com/civically/public/)."
+      prompt:
+        involved: "Want to get more involved in Civically?"
+
     faq: "Guidelines"
 
     app:

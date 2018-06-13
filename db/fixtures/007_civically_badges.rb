@@ -27,6 +27,13 @@ unless Rails.env.test?
     end
   end
 
+  Badge.where(badge_grouping_id: 1).each do |b|
+    if b.icon != 'fa-graduation-cap'
+      b.icon = 'fa-graduation-cap'
+      b.save!
+    end
+  end
+
   if grouping = BadgeGrouping.find_by(name: "Trust Level")
     grouping.name = "Status"
     grouping.save!
@@ -49,10 +56,10 @@ unless Rails.env.test?
     group.save
   end
 
-  unless Badge.exists?(Badge::Pioneer)
-    pioneer = Badge.new(
-      id: Badge::Pioneer,
-      name: I18n.t('badges.pioneer.name'),
+  unless Badge.exists?(Badge::Local)
+    local = Badge.new(
+      id: Badge::Local,
+      name: I18n.t('badges.local.name'),
       badge_type_id: BadgeType::Bronze,
       badge_grouping_id: BadgeGrouping::Place,
       default_icon: 'fa-tree',
@@ -62,16 +69,16 @@ unless Rails.env.test?
       show_posts: false,
       default_badge_grouping_id: BadgeGrouping::Place,
       auto_revoke: false,
-      description: I18n.t('badges.pioneer.description'),
-      long_description: I18n.t('badges.pioneer.long_description')
+      description: I18n.t('badges.local.description'),
+      long_description: I18n.t('badges.local.long_description')
     )
-    pioneer.save
+    local.save
   end
 
-  unless Badge.exists?(Badge::Pathfinder)
-    pathfinder = Badge.new(
-      id: Badge::Pathfinder,
-      name: I18n.t('badges.pathfinder.name'),
+  unless Badge.exists?(Badge::Supporter)
+    supporter = Badge.new(
+      id: Badge::Supporter,
+      name: I18n.t('badges.supporter.name'),
       badge_type_id: BadgeType::Silver,
       badge_grouping_id: BadgeGrouping::Place,
       default_icon: 'fa-tree',
@@ -81,10 +88,10 @@ unless Rails.env.test?
       show_posts: false,
       default_badge_grouping_id: BadgeGrouping::Place,
       auto_revoke: false,
-      description: I18n.t('badges.pathfinder.description'),
-      long_description: I18n.t('badges.pathfinder.long_description')
+      description: I18n.t('badges.supporter.description'),
+      long_description: I18n.t('badges.supporter.long_description')
     )
-    pathfinder.save
+    supporter.save
   end
 
   unless Badge.exists?(Badge::Founder)

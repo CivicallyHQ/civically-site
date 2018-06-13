@@ -3,7 +3,10 @@ import { createWidget } from 'discourse/widgets/widget';
 import { iconNode } from 'discourse-common/lib/icon-library';
 import DiscourseURL from 'discourse/lib/url';
 import { h } from 'virtual-dom';
-import { buildTitle, clearUnreadList } from 'discourse/plugins/civically-navigation/discourse/lib/utilities';
+import {
+  buildTitle,
+  clearUnreadList
+} from 'discourse/plugins/civically-navigation/discourse/lib/utilities';
 
 const typeUrl = function(type) {
   let filter = '';

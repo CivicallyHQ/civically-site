@@ -39,6 +39,10 @@ export default {
         {
           name: 'group',
           afterElement: '.user-table .wrapper'
+        },
+        {
+          name: 'invites.show',
+          afterElement: '.two-col'
         }
       ];
 
@@ -49,7 +53,13 @@ export default {
           },
 
           setupController(controller, model) {
-            controller.set('mainContent', this.routeName);
+            let template = this.routeName;
+
+            if (template.indexOf('.') > -1) {
+              template = template.split('.').join('/');
+            }
+
+            controller.set('mainContent', template);
 
             Ember.run.scheduleOnce('afterRender', () => {
               $('.people-image').insertAfter(route.afterElement);
@@ -66,7 +76,7 @@ export default {
     const existing = I18n.translate;
 
     I18n.translate = function(scope, options = {}) {
-      if (!options.skip_missing) {
+      if (scope && !options.skip_missing) {
         const exists = Boolean(this.lookup(scope, options));
         if (!exists && I18n.missing_translations.indexOf(scope) === -1 &&
             scope.indexOf('civically.translate') === -1) {
@@ -80,27 +90,10 @@ export default {
 
     withPluginApi('0.8.12', api => {
       api.modifyClass('controller:application', {
-        @on('init')
-        setupTranslations() {
-          this.positionTranslations();
-          $(window).on('resize', Ember.run.bind(this, this.positionTranslations));
-        },
 
         @observes('currentPath')
         updateTranslations() {
           I18n.missing_translations.clear();
-          this.positionTranslations();
-        },
-
-        positionTranslations() {
-          if (!this.site.mobileView) {
-            Ember.run.scheduleOnce('afterRender', () => {
-              const $translations = $('.missing-translations-container');
-              const $outlet = $('#main-outlet');
-              const offset = ($(window).width() - ($outlet.offset().left + $outlet.outerWidth()))
-              $translations.css('right', offset);
-            });
-          }
         },
 
         actions: {

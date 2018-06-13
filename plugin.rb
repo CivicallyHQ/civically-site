@@ -5,7 +5,8 @@
 # authors: angus
 # url: https://github.com/civicallyhq/civically-site
 
-register_asset 'stylesheets/civically-site.scss'
+register_asset 'stylesheets/common/civically-site.scss'
+register_asset 'stylesheets/mobile/civically-site.scss', :mobile
 
 after_initialize do
   SiteSetting.title = 'Civically'
@@ -13,6 +14,7 @@ after_initialize do
   SiteSetting.tagging_enabled = true
   SiteSetting.events_add_to_calendar = true
   SiteSetting.limit_suggested_to_category = true
+  SiteSetting.allow_user_locale = true
 
   if Rails.env.development?
     SiteSetting.port = 3000
@@ -20,7 +22,7 @@ after_initialize do
     SiteSetting.show_create_topics_notice = false
   end
 
-  TopicQuery.public_valid_options.push(:no_definitions)
+  TopicQuery.public_valid_options.push(:no_definitions, :subtype)
   Category.register_custom_field_type('meta', :boolean)
 
   add_to_serializer(:basic_category, :meta) { object.custom_fields['meta'] }

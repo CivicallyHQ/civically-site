@@ -83,8 +83,8 @@
 
 .help-button {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 60px;
+  right: 60px;
   font-size: 1.7em;
   padding: 10px 18px;
   border-radius: 50%;
@@ -228,7 +228,7 @@ section.user-main {
   padding: 20px;
   border-radius: 4px;
 
-  .place-user-controls {
+  .town-user-controls {
     min-height: initial;
     margin: 0;
   }
@@ -258,4 +258,117 @@ section.user-main {
   background-color: $secondary;
   padding: 20px;
   border-radius: 4px;
+}
+
+// classes used in other plugins
+
+.action-box {
+  max-width: 800px;
+  margin-bottom: 10px;
+  line-height: 25px;
+  border: 1px solid $tertiary;
+  background-color: white;
+  border-radius: 4px;
+
+  .btn-success {
+    background-color: $success;
+    color: $secondary;
+  }
+
+  .explanation {
+    padding: 20px;
+  }
+
+  .content {
+    overflow: hidden;
+  }
+}
+
+.main-content.editing .action-box {
+  border: 1px solid dark-light-diff($primary, $secondary, 90%, -65%);
+}
+
+a.p-link {
+  background-image: linear-gradient(180deg,transparent 90%, $tertiary 0);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: $primary;
+}
+
+.p-emphasis {
+  color: $tertiary
+}
+
+.p-text {
+  text-align: left;
+
+  &.title {
+    font-size: 2.5em;
+    line-height: 60px;
+  }
+
+  &.subtitle {
+    font-size: 1.8em;
+    line-height: 50px;
+  }
+
+  &.large {
+    font-size: 1.7em;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  &.medium {
+    font-size: 1.4em;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  &.small {
+    font-size: 1.1em;
+    line-height: 27px;
+  }
+
+  &.bold {
+    font-weight: 800;
+  }
+
+  &.centered {
+    text-align: center;
+  }
+
+  &.seperator {
+    margin: 0 10px;
+    font-size: 2em;
+  }
+
+  &.active {
+    color: $success;
+  }
+
+  &.bronze {
+    color: #cd7f32 !important;
+  }
+
+  &.silver {
+    color: #c0c0c0 !important;
+  }
+
+  &.gold {
+    color: rgb(231, 195, 0) !important;
+  }
+}
+
+.p-note {
+  @extend .p-text;
+  display: inline-block;
+  line-height: initial;
+  padding: 6px 10px;
+  border: 1px solid $tertiary;
+  border-radius: 4px;
+
+  .btn {
+    margin: 5px 0;
+  }
 }
