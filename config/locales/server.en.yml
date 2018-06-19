@@ -113,23 +113,14 @@ en:
   petitions_welcome:
     title: "About Petitions"
     body: |
-      Here you will find petitions that concern all of Civically. Petitions for:
+      This category is for petitions that concern all of Civically.
 
-      * #petitions:place
-
-      * #petitions:app
-
-      Petitions that are specific to a place, e.g. the creation of a new group for a place, can be found in the place itself.
-
-  place_petitions_welcome:
-    title: "About Place Petitions"
-    body: |
-      Here you will find petitions to add new places to Civically.
+      Petitions that are specific to a place, e.g. the addition of a neighbourhood, or the creation of a group, can be found in the place itself.
 
   app_petitions_welcome:
     title: "About App Petitions"
     body: |
-      Here you will find petitions to add new apps to Civically.
+      This category is for petitions to add new apps to Civically.
 
   plans_welcome:
     title: "About Plans"

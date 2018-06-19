@@ -25,6 +25,6 @@ unless Rails.env.test?
   end
 
   unless Theme.exists?(name: "Civically Wizards")
-    #RemoteTheme.import_theme("https://github.com/civicallyhq/civically-wizards")
+    RemoteTheme.import_theme("https://github.com/civicallyhq/civically-wizards")
   end
 end
