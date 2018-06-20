@@ -10,15 +10,15 @@ unless Rails.env.test?
       topic_featured_link_allowed: true,
       custom_fields: {
         'is_place': true,
-        'place_type': 'multinational',
+        'place_type': 'international',
         'can_join': false,
         'location': {
           "name": "World",
           "flag": "/images/emoji/twitter/earth_africa.png",
           "route_to": "/c/world",
           "geo_location": {
-            "type": "multinational",
-            "multinational_code": "world"
+            "type": "international",
+            "international_code": "world"
           }
         },
         'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
@@ -62,7 +62,7 @@ unless Rails.env.test?
       topic_featured_link_allowed: true,
       custom_fields: {
         'is_place': true,
-        'place_type': 'multinational',
+        'place_type': 'international',
         'can_join': false,
         'location': {
           "name": "European Union",
@@ -70,8 +70,8 @@ unless Rails.env.test?
           "route_to": "/c/eu",
           "geo_location": {
             "boundingbox": [30.5,71.3,-12.7,35.1],
-            "type": "multinational",
-            "multinational_code": "eu"
+            "type": "international",
+            "international_code": "eu"
           }
         },
         'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
