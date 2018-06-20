@@ -14,7 +14,7 @@ unless Rails.env.test?
         'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_thumbnail_width': 600,
-        'topic_list_thumbnail_height': 300
+        'topic_list_thumbnail_height': 200
       }
     )
     if category.save
@@ -58,7 +58,7 @@ unless Rails.env.test?
         'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_thumbnail_width': 600,
-        'topic_list_thumbnail_height': 300
+        'topic_list_thumbnail_height': 200
       }
     )
     if category.save
@@ -99,7 +99,7 @@ unless Rails.env.test?
         'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_thumbnail_width': 600,
-        'topic_list_thumbnail_height': 300
+        'topic_list_thumbnail_height': 200
       }
     )
     if category.save
@@ -141,7 +141,7 @@ unless Rails.env.test?
         'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_thumbnail_width': 600,
-        'topic_list_thumbnail_height': 300
+        'topic_list_thumbnail_height': 200
       }
     )
     if category.save

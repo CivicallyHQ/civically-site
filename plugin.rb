@@ -9,19 +9,6 @@ register_asset 'stylesheets/common/civically-site.scss'
 register_asset 'stylesheets/mobile/civically-site.scss', :mobile
 
 after_initialize do
-  SiteSetting.title = 'Civically'
-  SiteSetting.allow_uncategorized_topics = false
-  SiteSetting.tagging_enabled = true
-  SiteSetting.events_add_to_calendar = true
-  SiteSetting.limit_suggested_to_category = true
-  SiteSetting.allow_user_locale = true
-
-  if Rails.env.development?
-    SiteSetting.port = 3000
-    SiteSetting.bootstrap_mode_enabled = false
-    SiteSetting.show_create_topics_notice = false
-  end
-
   TopicQuery.public_valid_options.push(:no_definitions, :subtype)
   Category.register_custom_field_type('meta', :boolean)
 

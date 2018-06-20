@@ -1,24 +1,26 @@
 unless Rails.env.test?
-  unless SiteSetting.petition_category_id.to_i > 1
+  unless Category.find_by(name: 'World')
     category = Category.create(
       user: Discourse.system_user,
-      name: 'Petitions',
+      name: 'World',
+      slug: 'world',
       color: SecureRandom.hex(3),
-      permissions: { everyone: 2 },
       allow_badges: true,
       text_color: 'FFFFF',
       topic_featured_link_allowed: true,
       custom_fields: {
-        'meta': true,
-        'topic_types': 'petition',
-        'enable_topic_voting': "true",
-        'petition_enabled': true,
-        'petition_vote_threshold': 100,
-        'tl0_vote_limit': 1,
-        'tl1_vote_limit': 1,
-        'tl2_vote_limit': 1,
-        'tl3_vote_limit': 1,
-        'tl4_vote_limit': 1,
+        'is_place': true,
+        'place_type': 'multinational',
+        'can_join': false,
+        'location': {
+          "name": "World",
+          "flag": "/images/emoji/twitter/earth_africa.png",
+          "route_to": "/c/world",
+          "geo_location": {
+            "type": "multinational",
+            "multinational_code": "world"
+          }
+        },
         'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
@@ -26,9 +28,10 @@ unless Rails.env.test?
         'topic_list_thumbnail_width': 600,
         'topic_list_thumbnail_height': 200
       })
+
     if category.save
       t = Topic.new(
-        title: I18n.t("petitions_welcome.title"),
+        title: I18n.t("place.about.title", place: 'World'),
         user: Discourse.system_user,
         pinned_at: Time.now,
         category_id: category.id
@@ -42,48 +45,46 @@ unless Rails.env.test?
       category.save!
 
       t.posts.create(
-        raw: I18n.t('petitions_welcome.body'),
+        raw: I18n.t('place.about.title', place: 'World'),
         user: Discourse.system_user
       )
-
-      SiteSetting.petition_category_id = category.id
     end
   end
 
-  unless SiteSetting.app_petition_category_id.to_i > 1
+  unless Category.find_by(name: 'European Union')
     category = Category.create(
       user: Discourse.system_user,
-      name: 'App',
+      name: 'European Union',
+      slug: 'eu',
       color: SecureRandom.hex(3),
-      permissions: { everyone: 2 },
       allow_badges: true,
       text_color: 'FFFFF',
-      topic_id: -1,
       topic_featured_link_allowed: true,
-      parent_category_id: SiteSetting.petition_category_id,
       custom_fields: {
-        'meta': true,
-        'topic_types': 'petition',
-        'enable_topic_voting': "true",
-        'petition_enabled': true,
-        'petition_vote_threshold': 100,
-        'tl0_vote_limit': 1,
-        'tl1_vote_limit': 1,
-        'tl2_vote_limit': 1,
-        'tl3_vote_limit': 1,
-        'tl4_vote_limit': 1,
+        'is_place': true,
+        'place_type': 'multinational',
+        'can_join': false,
+        'location': {
+          "name": "European Union",
+          "flag": "/plugins/civically-place/images/flags/eu_32.png",
+          "route_to": "/c/eu",
+          "geo_location": {
+            "boundingbox": [30.5,71.3,-12.7,35.1],
+            "type": "multinational",
+            "multinational_code": "eu"
+          }
+        },
         'topic_list_social': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_thumbnail': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_excerpt': "latest|new|unread|top|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_action': "latest|unread|top|new|agenda|latest-mobile|new-mobile|unread-mobile|top-mobile|agenda-mobile",
         'topic_list_thumbnail_width': 600,
         'topic_list_thumbnail_height': 200
-      }
-    )
+      })
 
     if category.save
       t = Topic.new(
-        title: I18n.t("app_petitions_welcome.title"),
+        title: I18n.t("place.about.title", place: 'European Union'),
         user: Discourse.system_user,
         pinned_at: Time.now,
         category_id: category.id
@@ -97,11 +98,9 @@ unless Rails.env.test?
       category.save!
 
       t.posts.create(
-        raw: I18n.t('app_petitions_welcome.body'),
+        raw: I18n.t('place.about.title', place: 'European Union'),
         user: Discourse.system_user
       )
-
-      SiteSetting.app_petition_category_id = category.id
     end
   end
 end
