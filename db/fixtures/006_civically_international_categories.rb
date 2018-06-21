@@ -1,6 +1,6 @@
 unless Rails.env.test?
   unless Category.find_by(name: 'World')
-    category = Category.create(
+    world_category = Category.create(
       user: Discourse.system_user,
       name: 'World',
       slug: 'world',
@@ -29,30 +29,30 @@ unless Rails.env.test?
         'topic_list_thumbnail_height': 200
       })
 
-    if category.save
+    if world_category.save
       t = Topic.new(
         title: I18n.t("place.about.title", place: 'World'),
         user: Discourse.system_user,
         pinned_at: Time.now,
-        category_id: category.id
+        category_id: world_category.id
       )
       t.skip_callbacks = true
       t.ignore_category_auto_close = true
       t.delete_topic_timer(TopicTimer.types[:close])
       t.save!(validate: false)
 
-      category.topic_id = t.id
-      category.save!
+      world_category.topic_id = t.id
+      world_category.save!
 
       t.posts.create(
-        raw: I18n.t('place.about.title', place: 'World'),
+        raw: I18n.t('place.about.post', place: 'World'),
         user: Discourse.system_user
       )
     end
   end
 
   unless Category.find_by(name: 'European Union')
-    category = Category.create(
+    eu_category = Category.create(
       user: Discourse.system_user,
       name: 'European Union',
       slug: 'eu',
@@ -82,23 +82,23 @@ unless Rails.env.test?
         'topic_list_thumbnail_height': 200
       })
 
-    if category.save
+    if eu_category.save
       t = Topic.new(
         title: I18n.t("place.about.title", place: 'European Union'),
         user: Discourse.system_user,
         pinned_at: Time.now,
-        category_id: category.id
+        category_id: eu_category.id
       )
       t.skip_callbacks = true
       t.ignore_category_auto_close = true
       t.delete_topic_timer(TopicTimer.types[:close])
       t.save!(validate: false)
 
-      category.topic_id = t.id
-      category.save!
+      eu_category.topic_id = t.id
+      eu_category.save!
 
       t.posts.create(
-        raw: I18n.t('place.about.title', place: 'European Union'),
+        raw: I18n.t('place.about.post', place: 'European Union'),
         user: Discourse.system_user
       )
     end

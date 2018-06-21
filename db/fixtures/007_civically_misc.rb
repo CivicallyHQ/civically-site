@@ -8,7 +8,7 @@ unless Rails.env.test?
     lounge.destroy
   end
 
-  if feedback = Category.find_by(name: SiteSetting.meta_category_id)
+  if feedback = Category.find_by(id: SiteSetting.meta_category_id)
     if topic = Topic.find_by_id(feedback.topic_id)
       Post.find_by(topic_id: topic.id).destroy
       topic.destroy
