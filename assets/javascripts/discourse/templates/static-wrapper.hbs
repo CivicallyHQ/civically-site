@@ -1,0 +1,10 @@
+{{partial mainContent}}
+<div class="static-footer-buttons">
+  {{#if showDonate}}
+    {{#link-to 'donate' class='btn btn-primary btn-large'}}{{i18n 'discourse_donations.nav_item'}}{{/link-to}}
+  {{/if}}
+  {{#if showContact}}
+    {{d-button action='contact' actionParam=contactType label=contactLabel class='btn-primary btn-large'}}
+  {{/if}}
+</div>
+{{landing-footer}}

@@ -1,0 +1,18 @@
+{{#d-section pageClass="team"}}
+  <div class='container'>
+    <div class='contents clearfix body-page'>
+
+      {{#unless site.mobileView}}
+        {{static-image name='owl'}}
+      {{/unless}}
+
+      {{civically-static-navigation active='team'}}
+
+      <section class='about admins'>
+        {{#each members as |member|}}
+          {{user-team-info user=member}}
+        {{/each}}
+      </section>
+    </div>
+  </div>
+{{/d-section}}

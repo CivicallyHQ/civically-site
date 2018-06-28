@@ -17,5 +17,12 @@ after_initialize do
 
   register_seedfu_fixtures(Rails.root.join("plugins", "civically-site", "db", "fixtures").to_s)
 
+  load File.expand_path('../lib/team_edits.rb', __FILE__)
+
+  add_to_serializer(:user, :team_member) { object.team_member }
+  add_to_serializer(:admin_detailed_user, :team_member) { object.team_member }
+
+  load File.expand_path('../lib/static_edits.rb', __FILE__)
+
   DiscourseEvent.trigger(:civically_site_ready)
 end

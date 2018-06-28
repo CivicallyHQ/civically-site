@@ -1,13 +1,7 @@
 en:
   js:
     civically:
-      about: >
-        Civically is the platform for government, law and community.
-        It exists to make community stronger, law easier and government better.
-
       coming_soon: "Coming Soon"
-      team:
-        title: "Our Team"
       translate:
         description: We're missing {{missingCount}} translations of English to {{localeName}} on this page.
         help: "[Help to translate Civically](https://www.transifex.com/civically/public/)."
@@ -15,6 +9,14 @@ en:
         involved: "Want to get more involved in Civically?"
 
     faq: "Guidelines"
+
+    team:
+      label: "Team"
+      add: "Add To Team"
+      remove: "Remove From Team"
+
+    page_not_found:
+      back_to_home: "Go Back Home"
 
     app:
       civically_site:

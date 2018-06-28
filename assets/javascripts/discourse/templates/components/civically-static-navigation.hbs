@@ -1,0 +1,3 @@
+{{#each navItems as |item|}}
+  <li class="{{item.listClass}}">{{#link-to item.type class=item.linkClass}}{{i18n item.label}}{{/link-to}}</li>
+{{/each}}

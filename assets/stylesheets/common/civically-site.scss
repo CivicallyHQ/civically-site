@@ -20,12 +20,8 @@
   font-style: italic;
 }
 
-.about.admins {
-  margin-top: 30px;
-}
-
-.body-page {
-  margin-bottom: 60px;
+.static-about .body-page {
+  max-width: 700px;
 }
 
 .body-page ul li p {
@@ -41,9 +37,17 @@
 }
 
 .static-image {
-  position: fixed;
-  right: calc(50% - 550px);
-  bottom: 100px;
+  position: absolute;
+  right: calc(50% - 750px);
+  top: 80px;
+}
+
+.static-footer-buttons {
+  display: flex;
+
+  .btn {
+    margin-right: 20px;
+  }
 }
 
 .missing-translations-container {
@@ -150,8 +154,16 @@
 body {
   background-color: #e6ecf0;
 
-  &.admin-interface, &.about-page, &.landing, &.static-faq, &.static-tos, &.static-privacy {
+  &.admin-interface, &.static-about, &.team-page, &.donate-page, &.landing, &.static-faq, &.static-tos, &.static-privacy {
     background-color: $secondary;
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .landing-footer {
+      margin-top: 70px;
+    }
   }
 }
 
@@ -258,6 +270,32 @@ section.user-main {
   background-color: $secondary;
   padding: 20px;
   border-radius: 4px;
+}
+
+span .admin-user-details-outlet .display-row {
+  border-top: 1px solid $primary-low;
+}
+
+span .admin-user-details-outlet h1 + .display-row {
+  border-top: none;
+}
+
+.user-info.user-team-info .user-detail {
+  width: initial;
+  padding-left: 20px;
+}
+
+body.not-found {
+  background: url('/plugins/civically-user/images/background.png') center / cover #FEFDF9 no-repeat;
+}
+
+.not-found-wrapper {
+  margin-top: 40px;
+  padding: 40px;
+  text-align: center;
+  background: $secondary;
+  box-shadow: shadow('dropdown');
+  border: $primary-low;
 }
 
 // classes used in other plugins

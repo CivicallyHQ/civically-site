@@ -1,79 +1,4 @@
 en:
-  guidelines_topic:
-    title: "FAQ/Guidelines"
-    body: |
-      <a name="respect"></a>
-
-      ## [Please Act Respectfully](#respect)
-
-      Please treat Civically, and its users, with respect. Disagreement and debate are encouraged, as long as the discussion is respectful.
-
-      The following behavior is not acceptable and will be sanctioned by moderators:
-
-      * Attacks on any individual or group on the basis of race, gender, disability, religion or other personal or cultural characteristics.
-
-      * Posting of explicit, violent or otherwise disturbing material.
-
-      * Harrasment, impersonation, abuse, or Posting of personal details about an individual without their explicit consent.
-
-      * Spamming or otherwise vandalizing Civically.
-
-      Remember that this is a public forum, and search engines index its pages. Keep the language, links, and images safe for family and friends.
-
-      <a name="participate"></a>
-
-      ## [Your Participation Counts](#participate)
-
-      The conversations we have here set the tone for every new arrival. Help us influence the future of this community by choosing to engage in discussions that make this forum an interesting place to be &mdash; and avoiding those that do not.
-
-      Discourse provides tools that enable the community to collectively identify the best (and worst) contributions: bookmarks, likes, flags, replies, edits, and so forth. Use these tools to improve your own experience, and everyone else’s, too.
-
-      Let’s leave our community better than we found it.
-
-      <a name="flag-problems"></a>
-
-      ## [If You See a Problem, Flag It](#flag-problems)
-
-      Moderators are responsible for Civically, but so are you. With your help, moderators can be community facilitators, not just janitors or police.
-
-      When you see bad behavior, don’t reply. It encourages the bad behavior by acknowledging it, consumes your energy, and wastes everyone’s time. _Just flag it_. If enough flags accrue, action will be taken, either automatically or by moderator intervention.
-
-      In order to maintain our community, moderators reserve the right to remove any content and any user account for any reason at any time. Moderators do not preview new posts; the moderators and site operators take no responsibility for any content posted by the community.
-
-      <a name="keep-tidy"></a>
-
-      ## [Keep It Tidy](#keep-tidy)
-
-      Make the effort to put things in the right place, so that we can spend more time discussing and less cleaning up. So:
-
-      *   Don’t start a topic in the wrong place.
-      *   Don’t cross-post the same thing in multiple topics.
-      *   Don’t post no-content replies.
-      *   Don’t divert a topic by changing it midstream.
-      *   Don’t sign your posts &mdash; every post has your profile information attached to it.
-
-      Rather than posting “+1” or “Agreed”, use the Like button.
-
-      <a name="stealing"></a>
-
-      ## [Post Only Your Own Stuff](#stealing)
-
-      You may not post anything that belongs to someone else without permission. You may not post descriptions of, links to, or methods for stealing someone’s intellectual property (software, video, audio, images), or for breaking any other law.
-
-      <a name="power"></a>
-
-      ## [Powered by You](#power)
-
-      Civically is powered by you and your contributions. The Civically Team only plays a curatorial role. The goal is to make Civically 100% community run.
-
-      Join in the discussion about plans for Civically in #plans and pitch in where you can in #work.
-
-      <a name="tos"></a>
-
-      ## [Terms of Service](#tos)
-
-      We have a [Terms of Service](/tos) describing your (and our) behavior and rights related to content, privacy, and laws. To use this service, you must agree to abide by our [TOS](/tos).
-
   run_welcome:
     title: "About Run"
     body: |
@@ -201,6 +126,96 @@ en:
       Here you will find policies about using Civically. In each topic the policy is in the first post of the topic.
 
       You can discuss the policy by replying to the policy post. Discussion should be about the content of the policy, not how to use the functionality the policy relates to.
+
+  guidelines_topic:
+    title: "FAQ/Guidelines"
+    body: |
+      <a name="respect"></a>
+
+      ## [Please Act Respectfully](#respect)
+
+      Please treat Civically, and its users, with respect. Disagreement and debate are encouraged, as long as the discussion is respectful.
+
+      The following behavior is not acceptable and will be sanctioned by moderators:
+
+      * Attacks on any individual or group on the basis of race, gender, disability, religion or other personal or cultural characteristics.
+
+      * Posting of explicit, violent or otherwise disturbing material.
+
+      * Harrasment, impersonation, abuse, or Posting of personal details about an individual without their explicit consent.
+
+      * Spamming or otherwise vandalizing Civically.
+
+      Remember that this is a public forum, and search engines index its pages. Keep the language, links, and images safe for family and friends.
+
+      <a name="participate"></a>
+
+      ## [Your Participation Counts](#participate)
+
+      The conversations we have here set the tone for every new arrival. Help us influence the future of this community by choosing to engage in discussions that make this forum an interesting place to be &mdash; and avoiding those that do not.
+
+      Discourse provides tools that enable the community to collectively identify the best (and worst) contributions: bookmarks, likes, flags, replies, edits, and so forth. Use these tools to improve your own experience, and everyone else’s, too.
+
+      Let’s leave our community better than we found it.
+
+      <a name="flag-problems"></a>
+
+      ## [If You See a Problem, Flag It](#flag-problems)
+
+      Moderators are responsible for Civically, but so are you. With your help, moderators can be community facilitators, not just janitors or police.
+
+      When you see bad behavior, don’t reply. It encourages the bad behavior by acknowledging it, consumes your energy, and wastes everyone’s time. _Just flag it_. If enough flags accrue, action will be taken, either automatically or by moderator intervention.
+
+      In order to maintain our community, moderators reserve the right to remove any content and any user account for any reason at any time. Moderators do not preview new posts; the moderators and site operators take no responsibility for any content posted by the community.
+
+      <a name="keep-tidy"></a>
+
+      ## [Keep It Tidy](#keep-tidy)
+
+      Make the effort to put things in the right place, so that we can spend more time discussing and less cleaning up. So:
+
+      *   Don’t start a topic in the wrong place.
+      *   Don’t cross-post the same thing in multiple topics.
+      *   Don’t post no-content replies.
+      *   Don’t divert a topic by changing it midstream.
+      *   Don’t sign your posts &mdash; every post has your profile information attached to it.
+
+      Rather than posting “+1” or “Agreed”, use the Like button.
+
+      <a name="stealing"></a>
+
+      ## [Post Only Your Own Stuff](#stealing)
+
+      You may not post anything that belongs to someone else without permission. You may not post descriptions of, links to, or methods for stealing someone’s intellectual property (software, video, audio, images), or for breaking any other law.
+
+      <a name="power"></a>
+
+      ## [Powered by You](#power)
+
+      Civically is powered by you and your contributions. The Civically Team only plays a curatorial role. The goal is to make Civically 100% community run.
+
+      Join in the discussion about plans for Civically in #plans and pitch in where you can in #work.
+
+      <a name="tos"></a>
+
+      ## [Terms of Service](#tos)
+
+      We have a [Terms of Service](/tos) describing your (and our) behavior and rights related to content, privacy, and laws. To use this service, you must agree to abide by our [TOS](/tos).
+
+  about_topic:
+    title: "About"
+    body: |
+      Civically is the people's platform. It helps you navigate government, makes law accessible and strengthens communities. We put the power in your hands.
+
+      Civically is built around civic engagement. This means people talking about their government, laws or community. Experts are involved in the conversation, but real experience is just as important.
+
+      Civically is planned, built and run with our community. Our code is 100% open source, we work on plans for the product collaboratively and we hold elections for key community positions.
+
+      Civically is not built to make its owners wealthy. It's not run for profit, but it's built to scale and be economically sustainable. Civically is a social enterprise. Civically does not, and will never, run a business selling user data or advertising space.
+
+      Civically is currently owned by Civil Core Pty Ltd, an Australian corporation. Civil Core Pty Ltd will soon be replaced by a non-profit organisation, which will own the platform and have a majority ownership in a corporate subsidiary that will sell services associated with the platform.
+
+      If you support what we're doing please consider donating.
 
   privacy_topic:
     title: "Privacy Policy"
