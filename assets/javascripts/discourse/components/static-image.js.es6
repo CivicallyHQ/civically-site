@@ -5,6 +5,6 @@ export default Ember.Component.extend({
 
   @computed('name')
   imageUrl(name) {
-    return `/plugins/civically-site/images/${name}.png`;
+    return `/plugins/civically-private/images/${name}.png`;
   }
 });

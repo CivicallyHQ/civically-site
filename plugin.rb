@@ -10,12 +10,10 @@ register_asset 'stylesheets/mobile/civically-site.scss', :mobile
 
 after_initialize do
   TopicQuery.public_valid_options.push(:no_definitions, :subtype)
-  Category.register_custom_field_type('meta', :boolean)
 
+  Category.register_custom_field_type('meta', :boolean)
   add_to_serializer(:basic_category, :meta) { object.custom_fields['meta'] }
   add_to_class(:category, 'meta') { self.custom_fields['meta'] }
-
-  register_seedfu_fixtures(Rails.root.join("plugins", "civically-site", "db", "fixtures").to_s)
 
   load File.expand_path('../lib/team_edits.rb', __FILE__)
 
