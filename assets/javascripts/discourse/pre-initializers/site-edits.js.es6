@@ -133,7 +133,7 @@ export default {
             let showContact = true;
             let showDonate = true;
 
-            if (r.name === 'donate') {
+            if (r.name === 'donate' || Discourse.SiteSettings.discourse_donations_enabled) {
               showDonate = false;
             }
 
