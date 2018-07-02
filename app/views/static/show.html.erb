@@ -4,7 +4,9 @@
     <% unless SiteSetting.login_required? && current_user.nil? %>
       <li class="nav-item-about"><%= link_to t('about'), about_index_path, class: @page == 'about' ? 'active' : '' %></a></li>
       <li class="nav-item-team"><%= link_to t('team'), '/team' %></a></li>
-      <li class="nav-item-donate"><%= link_to t('donate'), '/donate' %></a></li>
+      <% if SiteSetting.discourse_donations_enabled %>
+        <li class="nav-item-donate"><%= link_to t('donate'), '/donate' %></a></li>
+      <% end %>
       <% if @faq_overriden %>
         <li class='nav-item-guidelines'><a class='<%= @page == 'faq' ? 'active' : '' %>' href='<%= guidelines_path %>'><%= t 'guidelines' %></a></li>
         <li class='nav-item-faq'><a href='<%= faq_path %>'><%= t 'js.faq' %></a></li>

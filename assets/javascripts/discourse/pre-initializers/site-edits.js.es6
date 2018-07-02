@@ -145,8 +145,6 @@ export default {
               contactLabel = 'landing.donate.link';
             }
 
-            console.log(model);
-
             if (this.generatedRoute()) {
               this.controllerFor('static-wrapper').setProperties({
                 mainContent: 'static',

@@ -1,4 +1,4 @@
-const staticRoutes = [
+let staticRoutes = [
   {
     name: 'about',
     label: 'about.simple_title'
@@ -6,10 +6,6 @@ const staticRoutes = [
   {
     name: 'team',
     label: 'team.label',
-  },
-  {
-    name: 'donate',
-    label: 'discourse_donations.nav_item'
   },
   {
     name: 'faq',
@@ -24,5 +20,12 @@ const staticRoutes = [
     label: 'privacy'
   }
 ];
+
+if (Discourse.SiteSettings.discourse_donations_enabled) {
+  staticRoutes.splice(2, 0, {
+    name: 'donate',
+    label: 'discourse_donations.nav_item'
+  });
+}
 
 export { staticRoutes };
