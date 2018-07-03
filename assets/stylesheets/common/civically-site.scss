@@ -154,7 +154,7 @@
 body {
   background-color: #e6ecf0;
 
-  &.admin-interface, &.static-about, &.team-page, &.donate-page, &.landing, &.static-faq, &.static-tos, &.static-privacy {
+  &.admin-interface, &.static-about, &.team-page, &.donate-page, &.landing, &.static-faq, &.static-tos, &.static-privacy, &.loading-static {
     background-color: $secondary;
 
     section {
@@ -280,9 +280,25 @@ span .admin-user-details-outlet h1 + .display-row {
   border-top: none;
 }
 
-.user-info.user-team-info .user-detail {
-  width: initial;
-  padding-left: 20px;
+.user-info.user-team-info {
+  display: flex;
+
+  .user-detail {
+    width: initial;
+    padding-left: 20px;
+
+    .name-line, .position, .title {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+    }
+
+    .name {
+      color: $primary;
+      font-weight: 800;
+      margin: 0;
+    }
+  }
 }
 
 body.not-found {

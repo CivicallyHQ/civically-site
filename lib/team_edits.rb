@@ -24,15 +24,12 @@ end
 
 class CivicallyTeam::Team
   def self.members
-    ::User.where("id in (
-      SELECT user_id FROM user_custom_fields
-      WHERE name = 'team_member' AND value IN ('t', 'team')
-    )")
+    @members ||= Group.lookup_group('Civically').users.human_users
   end
 end
 
 class CivicallyTeam::TeamSerializer < ApplicationSerializer
-  attributes :name, :title, :username, :avatar_template, :team_bio
+  attributes :name, :title, :position, :username, :avatar_template, :team_bio
 end
 
 require_dependency 'application_controller'

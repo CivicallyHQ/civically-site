@@ -27,10 +27,15 @@ class StaticController
 end
 
 StaticController.class_eval do
+  before_action :set_body_class
   prepend_view_path(Rails.root.join('plugins', 'civically-site', 'app/views'))
 
   def blank
     render html: '', layout: true
+  end
+
+  def set_body_class
+    @custom_body_class = 'static'
   end
 end
 

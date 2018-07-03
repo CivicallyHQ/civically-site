@@ -217,6 +217,29 @@ export default {
           }
         }
       });
+
+      const staticNames = staticRoutes.map((r) => r.name);
+
+      api.modifyClass('route:application', {
+        actions: {
+          willTransition(transition) {
+            let intentName = transition.intent.name ?
+                             transition.intent.name :
+                             transition.intent.url.replace("/", "");
+
+            if (staticNames.indexOf(intentName) > -1) {
+              $('body').addClass('loading-static');
+            }
+
+            return this._super(transition);
+          },
+
+          didTransition() {
+            $('body').removeClass('loading-static');
+            return this._super();
+          }
+        }
+      });
     });
   }
 };
