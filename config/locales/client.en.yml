@@ -12,8 +12,6 @@ en:
 
     team:
       label: "Team"
-      add: "Add To Team"
-      remove: "Remove From Team"
 
     page_not_found:
       back_to_home: "Go Back Home"
