@@ -26,9 +26,12 @@ class StaticController
   prepend StaticControllerCivicallyExtension
 end
 
+ApplicationController.class_eval do
+  prepend_view_path(Rails.root.join('plugins', 'civically-site', 'app/views'))
+end
+
 StaticController.class_eval do
   before_action :set_body_class
-  prepend_view_path(Rails.root.join('plugins', 'civically-site', 'app/views'))
 
   def blank
     render html: '', layout: true
