@@ -23,7 +23,7 @@ en:
           Helps you navigate and contribute to Civically, with easy-to-access
           lists of petitions, plans, work and run topics.
         locked: "Set your place or vote for a place petition to unlock the Civically App."
-        icon: ':earth_americas:'
+        icon: '/plugins/civically-private/images/logo_small.png'
         list:
           petition:
             title: "Petitions"
