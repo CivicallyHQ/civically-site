@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   @computed('currentUser.app_data')
   userWidgetList(appData) {
     const appUtilities = 'discourse/plugins/civically-app/discourse/lib/app-utilities';
-    if (requirejs.entries[appUtilities]) {
+    if (appData && requirejs.entries[appUtilities]) {
       const buildWidgetList = requirejs(appUtilities);
       return buildWidgetList(appData);
     } else {
