@@ -2,6 +2,7 @@ en:
   js:
     civically:
       coming_soon: "Coming Soon"
+      github: "Github"
       translate:
         description: We're missing {{missingCount}} translations of English to {{localeName}} on this page.
         help: "[Help to translate Civically](https://www.transifex.com/civically/public/)."

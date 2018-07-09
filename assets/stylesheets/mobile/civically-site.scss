@@ -3,3 +3,39 @@
   right: 50px;
   font-size: 1.5em;
 }
+
+.p-text {
+  text-align: left;
+
+  &.title {
+    font-size: 1.7em;
+    line-height: 35px;
+  }
+
+  &.subtitle {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+
+  &.large {
+    font-size: 1.3em;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  &.medium {
+    font-size: 1.1em;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  &.small {
+    font-size: 1em;
+    line-height: 27px;
+  }
+}
+
+.missing-translations-container {
+  right: 10px;
+  bottom: 10px;
+}

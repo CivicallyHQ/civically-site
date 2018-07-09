@@ -228,14 +228,14 @@ export default {
                              transition.intent.url.replace("/", "");
 
             if (staticNames.indexOf(intentName) > -1) {
-              $('body').addClass('loading-static');
+              $('body').addClass('static-loading');
             }
 
             return this._super(transition);
           },
 
           didTransition() {
-            $('body').removeClass('loading-static');
+            $('body').removeClass('static-loading');
             return this._super();
           }
         }

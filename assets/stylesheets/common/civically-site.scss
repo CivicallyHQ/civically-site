@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+
 .coming-soon {
   display: inline-block;
   position: relative;
@@ -20,8 +22,8 @@
   font-style: italic;
 }
 
-.static-about .body-page {
-  max-width: 700px;
+.body-page {
+  max-width: 750px;
 }
 
 .body-page ul li p {
@@ -54,14 +56,20 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 2;
+  z-index: 101;
 }
 
 .missing-translations {
   position: relative;
+  background-color: $secondary;
 
   .btn {
     box-shadow: shadow("dropdown");
+    background-color: rgba($danger, 0.3);
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   .description {
@@ -154,15 +162,16 @@
 body {
   background-color: #e6ecf0;
 
-  &.admin-interface, &.static-about, &.team-page, &.donate-page, &.landing, &.static-faq, &.static-tos, &.static-privacy, &.loading-static {
+  &.admin-interface, &[class*="static-"], &.team-page, &.donate-page, &.landing {
     background-color: $secondary;
 
     section {
       margin-bottom: 30px;
     }
 
-    .landing-footer {
-      margin-top: 70px;
+    &:not(.admin-interface) #main-outlet {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1.1px;
     }
   }
 }
@@ -405,7 +414,7 @@ a.p-link {
   }
 
   &.small {
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 27px;
   }
 
@@ -437,6 +446,10 @@ a.p-link {
   &.gold {
     color: rgb(231, 195, 0) !important;
   }
+
+  .highlight {
+    background-color: rgba($highlight, 0.3);
+  }
 }
 
 .p-note {
@@ -450,4 +463,8 @@ a.p-link {
   .btn {
     margin: 5px 0;
   }
+}
+
+.alert-bootstrap-mode {
+  display: none;
 }
