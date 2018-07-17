@@ -172,6 +172,15 @@ body {
     &:not(.admin-interface) #main-outlet {
       font-family: 'Montserrat', sans-serif;
       letter-spacing: 1.1px;
+
+      h2 {
+        margin: 1em 0 0.5em 0;
+        font-size: 1.3em;
+
+        a {
+          @extend .p-link;
+        }
+      }
     }
   }
 }
@@ -300,6 +309,12 @@ span .admin-user-details-outlet h1 + .display-row {
       display: inline-block;
       vertical-align: top;
       margin: 0;
+    }
+
+    .position {
+      margin-left: 3px;
+      padding-left: 8px;
+      border-left: 1px solid $primary;
     }
 
     .name {
