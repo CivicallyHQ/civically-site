@@ -448,7 +448,9 @@ a.p-link {
   }
 
   .highlight {
-    background-color: rgba($highlight, 0.3);
+    background-color: rgba($highlight, 0.4);
+    font-weight: 600;
+    border: 1px solid $primary-low;
   }
 }
 
