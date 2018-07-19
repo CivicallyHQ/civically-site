@@ -138,11 +138,11 @@ export default {
             }
 
             if (contactType === 'team') {
-              contactLabel = 'landing.team.link';
+              contactLabel = 'landing.team.label';
             }
 
             if (contactType === 'donate') {
-              contactLabel = 'landing.donate.link';
+              contactLabel = 'landing.donate.label';
             }
 
             if (this.generatedRoute()) {

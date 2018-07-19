@@ -1,4 +1,4 @@
-STATIC_ROUTES = ['start', 'organization', 'government', 'about', 'team', 'donate', 'faq', 'tos', 'privacy']
+STATIC_ROUTES = ['start', 'organisation', 'government', 'about', 'team', 'donate', 'faq', 'tos', 'privacy']
 
 Discourse.static_doc_topic_ids.push(SiteSetting.about_topic_id)
 

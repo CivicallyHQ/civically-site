@@ -173,12 +173,20 @@ body {
       font-family: 'Montserrat', sans-serif;
       letter-spacing: 1.1px;
 
-      h2 {
-        margin: 1em 0 0.5em 0;
-        font-size: 1.3em;
+      .static-body {
+        h2 {
+          margin: 2em 0 0.5em 0;
+          font-size: 1.3em;
 
-        a {
-          @extend .p-link;
+          a {
+            color: $primary;
+          }
+        }
+
+        p {
+          a {
+            @extend .p-link;
+          }
         }
       }
     }
