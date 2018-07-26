@@ -240,6 +240,17 @@ export default {
           }
         }
       });
+
+      api.modifyClass('component:site-header', {
+        router: Ember.inject.service('-routing'),
+        currentRoute: Ember.computed.alias('router.router.currentRouteName'),
+
+        buildArgs() {
+          return $.extend(this._super(), {
+            route: this.get('currentRoute')
+          });
+        }
+      });
     });
   }
 };

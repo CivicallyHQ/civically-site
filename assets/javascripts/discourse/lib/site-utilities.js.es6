@@ -28,4 +28,20 @@ if (Discourse.SiteSettings.discourse_donations_enabled) {
   });
 }
 
-export { staticRoutes };
+const maxImage = 43;
+const maxBanner = 5;
+const baseUrl = '/plugins/civically-private/images';
+
+function random(max) {
+  return Math.floor(Math.random() * (max - 1 + 1)) + 1;
+}
+
+const peopleImageUrl = function() {
+  return baseUrl + `/people/${random(maxImage)}.png`;
+}
+
+const peopleBannerUrl = function() {
+  return baseUrl + `/people_banners/${random(maxBanner)}.png`;
+}
+
+export { staticRoutes, peopleImageUrl, peopleBannerUrl };
