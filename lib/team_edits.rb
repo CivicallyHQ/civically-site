@@ -14,7 +14,7 @@ end
 
 class CivicallyTeam::Team
   def self.members
-    @members ||= Group.lookup_group('Civically').users.human_users
+    Group.lookup_group('Civically').users.human_users
   end
 end
 
