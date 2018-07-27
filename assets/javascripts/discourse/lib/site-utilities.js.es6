@@ -38,10 +38,10 @@ function random(max) {
 
 const peopleImageUrl = function() {
   return baseUrl + `/people/${random(maxImage)}.png`;
-}
+};
 
 const peopleBannerUrl = function() {
   return baseUrl + `/people_banners/${random(maxBanner)}.png`;
-}
+};
 
 export { staticRoutes, peopleImageUrl, peopleBannerUrl };

@@ -19,7 +19,7 @@ class CivicallyTeam::Team
 end
 
 class CivicallyTeam::TeamSerializer < ApplicationSerializer
-  attributes :name, :title, :position, :username, :avatar_template, :team_bio
+  attributes :name, :title, :position, :linkedin, :username, :avatar_template, :team_bio
 end
 
 require_dependency 'application_controller'

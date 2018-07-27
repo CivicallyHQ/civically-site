@@ -313,16 +313,21 @@ span .admin-user-details-outlet h1 + .display-row {
     width: initial;
     padding-left: 20px;
 
-    .name-line, .position, .title {
+    .name-line, .position, .linkedin {
       display: inline-block;
-      vertical-align: top;
+      vertical-align: middle;
       margin: 0;
     }
 
-    .position {
+    .position, .linkedin {
       margin-left: 3px;
       padding-left: 8px;
       border-left: 1px solid $primary;
+
+      i {
+        font-size: 23px;
+        vertical-align: top;
+      }
     }
 
     .name {

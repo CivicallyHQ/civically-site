@@ -4,10 +4,22 @@
 
 <div class="user-detail">
   <div class='name-line'>
-    <span class="name">{{unbound name}}</span>
+    <span class="name">
+      {{unbound user.name}}
+    </span>
   </div>
 
-  <div class="position">{{unbound user.position}}</div>
+  {{#if user.position}}
+    <div class="position">
+      {{unbound user.position}}
+    </div>
+  {{/if}}
+
+  {{#if user.linkedin}}
+    <div class="linkedin">
+      <a href={{user.linkedin}}>{{d-icon 'linkedin-square'}}</a>
+    </div>
+  {{/if}}
 
   <div class='details'>
     {{{user.team_bio}}}
