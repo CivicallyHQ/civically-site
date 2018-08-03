@@ -18,5 +18,9 @@ after_initialize do
   load File.expand_path('../lib/team_edits.rb', __FILE__)
   load File.expand_path('../lib/static_edits.rb', __FILE__)
 
+  if SiteSetting.invite_only
+    add_body_class('invite-only')
+  end
+
   DiscourseEvent.trigger(:civically_site_ready)
 end

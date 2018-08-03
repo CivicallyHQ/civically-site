@@ -497,3 +497,17 @@ a.p-link {
 .alert-bootstrap-mode {
   display: none;
 }
+
+/// beta (invite-only) css
+
+body.invite-only {
+  button.share {
+    display: none;
+  }
+  button.invite-topic {
+    display: none;
+  }
+  .user-main .nav-pills li:nth-child(5) {
+    display: none;
+  }
+}
