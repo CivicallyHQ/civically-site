@@ -1,0 +1,13 @@
+<div class="ribbon">
+  {{landing-text content="landing.launch.banner.launching"
+                 classes="small ribbon"}}
+</div>
+<div class="banner-contents">
+  {{landing-text content="landing.launch.banner.title" classes="title"}}
+  {{landing-text content="landing.launch.banner.subtitle" classes="small subtitle"}}
+  {{#if showCta}}
+    <a href='/start#story' class="btn btn-large btn-primary p-text small">
+      {{i18n 'landing.launch.banner.link'}}
+    </a>
+  {{/if}}
+</div>

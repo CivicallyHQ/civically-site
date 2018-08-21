@@ -2,13 +2,11 @@
   <div class='container'>
     <div class='contents clearfix body-page'>
 
-      {{#unless site.mobileView}}
-        {{static-image name='owl'}}
-      {{/unless}}
+      {{site-banner}}
 
       {{civically-static-navigation active='team'}}
 
-      <section class='about admins'>
+      <section class='static-main about admins'>
         {{#each members as |member|}}
           {{user-team-info user=member}}
         {{/each}}
