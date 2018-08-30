@@ -2,7 +2,7 @@ import { default as computed } from 'ember-addons/ember-computed-decorators';
 import { peopleBannerUrl } from 'discourse/plugins/civically-site/discourse/lib/site-utilities';
 
 export default Ember.Component.extend({
-  showCta: false,
+  showCta: true,
   classNameBindings: ['bannerStyle', ':site-banner', 'showCta'],
   attributeBindings: ['bannerStyle:style'],
 

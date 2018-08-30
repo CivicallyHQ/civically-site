@@ -546,7 +546,7 @@ a.p-link {
     background-color: $secondary;
     display: inline-block;
     padding: 20px 30px;
-    border: 1px solid $primary-low;
+    border: 2px solid $tertiary;
     border-radius: 4px;
     max-width: 650px;
     z-index: 1;
@@ -603,7 +603,7 @@ a.p-link {
     padding: 15px 0;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
     background-color: $secondary;
-    border: 3px solid $tertiary;
+    border: 2px solid $tertiary;
     font-weight: 700;
     color: $tertiary;
     box-sizing: border-box;
