@@ -39,3 +39,19 @@
   right: 10px;
   bottom: 10px;
 }
+
+.site-banner {
+  .ribbon {
+    top: -30px;
+    right: initial;
+    z-index: 10;
+  }
+
+  .ribbon span {
+    width: 100%;
+    left: initial;
+    transform: initial;
+    border-radius: 4px;
+    padding: 10px 0;
+  }
+}

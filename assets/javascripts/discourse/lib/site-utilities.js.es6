@@ -13,7 +13,7 @@ let staticRoutes = [
   },
   {
     name: 'tos',
-    label: 'terms_of_service'
+    label: 'tos'
   },
   {
     name: 'privacy',

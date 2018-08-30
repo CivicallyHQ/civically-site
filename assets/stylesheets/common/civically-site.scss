@@ -563,7 +563,7 @@ a.p-link {
     }
 
     .subtitle {
-      max-width: 400px;
+      max-width: 500px;
       margin: 15px auto 0;
     }
   }
@@ -571,7 +571,7 @@ a.p-link {
   &.show-cta {
     .banner-contents {
       .subtitle {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -601,9 +601,12 @@ a.p-link {
     display: block;
     width: 350px;
     padding: 15px 0;
-    background-color: $tertiary;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    color: $secondary;
+    background-color: $secondary;
+    border: 3px solid $tertiary;
+    font-weight: 700;
+    color: $tertiary;
+    box-sizing: border-box;
     text-align: center;
     left: -25px;
     top: 70px;
