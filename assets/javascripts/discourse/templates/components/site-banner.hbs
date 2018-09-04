@@ -6,8 +6,17 @@
   {{landing-text content="landing.launch.banner.title" classes="title"}}
   {{landing-text content="landing.launch.banner.subtitle" classes="small subtitle"}}
   {{#if showCta}}
-    <a href='/start#access' class="btn btn-large btn-primary p-text small">
-      {{i18n 'landing.launch.banner.link'}}
-    </a>
+    {{landing-contact type='launch' embedded=true}}
+    <div class="links">
+      <a href='/start#why' class="p-link p-text small">
+        {{i18n 'landing.launch.banner.links.why'}}
+      </a>
+      <a href='/start#how' class="p-link p-text small">
+        {{i18n 'landing.launch.banner.links.how'}}
+      </a>
+      <a href='/organisations#banner' class="p-link p-text small">
+        {{i18n 'landing.launch.banner.links.organisation'}}
+      </a>
+    </div>
   {{/if}}
 </div>

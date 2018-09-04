@@ -41,17 +41,22 @@
 }
 
 .site-banner {
+  display: block;
+
   .ribbon {
-    top: -30px;
-    right: initial;
-    z-index: 10;
+    display: none;
   }
 
-  .ribbon span {
-    width: 100%;
-    left: initial;
-    transform: initial;
-    border-radius: 4px;
-    padding: 10px 0;
+  .banner-contents {
+    margin-top: 30px;
+
+    .links {
+      display: block;
+
+      a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
   }
 }
