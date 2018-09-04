@@ -2,7 +2,9 @@
   <div class='container'>
     <div class='contents clearfix body-page'>
 
-      {{site-banner}}
+      {{#unless site.mobileView}}
+        {{site-banner}}
+      {{/unless}}
 
       {{civically-static-navigation active='team'}}
 

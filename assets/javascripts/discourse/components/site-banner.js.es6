@@ -23,5 +23,5 @@ export default Ember.Component.extend({
       style += `background-image: url('${url}');`;
     }
     return new Handlebars.SafeString(style);
-  },
+  }
 });

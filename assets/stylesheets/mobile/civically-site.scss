@@ -49,14 +49,25 @@
 
   .banner-contents {
     margin-top: 30px;
+    position: relative;
 
     .links {
       display: block;
 
       a {
         display: block;
-        margin: 10px 0;
+        margin: 15px 0;
       }
     }
+  }
+}
+
+.above-static-outlet {
+  .site-banner {
+    padding: 0;
+  }
+
+  .banner-contents {
+    margin: 0;
   }
 }

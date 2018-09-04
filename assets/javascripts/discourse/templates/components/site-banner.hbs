@@ -14,9 +14,13 @@
       <a href='/start#how' class="p-link p-text small">
         {{i18n 'landing.launch.banner.links.how'}}
       </a>
-      <a href='/organisations#banner' class="p-link p-text small">
+      <a href='/organisations#top' class="p-link p-text small">
         {{i18n 'landing.launch.banner.links.organisation'}}
       </a>
     </div>
+  {{else}}
+    <a href='/start#banner' class="btn btn-primary">
+      {{i18n 'landing.launch.contact.submit'}}
+    </a>
   {{/if}}
 </div>
