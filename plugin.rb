@@ -8,6 +8,11 @@
 register_asset 'stylesheets/common/civically-site.scss'
 register_asset 'stylesheets/mobile/civically-site.scss', :mobile
 
+register_html_builder('server:before-head-close') do
+  "<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>"
+  "<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery;</script>"
+end
+
 after_initialize do
   Category.register_custom_field_type('meta', :boolean)
   add_to_serializer(:basic_category, :meta) { object.custom_fields['meta'] }
