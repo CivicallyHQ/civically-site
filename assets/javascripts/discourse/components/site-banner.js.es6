@@ -11,7 +11,7 @@ export default Ember.Component.extend({
     const mobileView = this.get('site.mobileView');
     let style = '';
 
-    if (!mobileView || showCta) {
+    if (!mobileView) {
       let url;
 
       if (showCta) {
