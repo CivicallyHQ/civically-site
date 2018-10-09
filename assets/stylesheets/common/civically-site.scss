@@ -114,6 +114,13 @@
   height: 90px;
 }
 
+.site-above-footer .people-image {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  z-index: 0;
+}
+
 .user-main {
   position: relative;
 
@@ -501,6 +508,10 @@ a.p-link {
   .btn {
     margin: 5px 0;
   }
+}
+
+.widget-button.btn {
+  min-height: initial;
 }
 
 .alert-bootstrap-mode {

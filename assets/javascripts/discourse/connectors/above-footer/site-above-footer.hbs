@@ -1,3 +1,7 @@
 {{#if currentUser}}
   {{d-button class="btn-primary help-button" action='routeToHelp' icon='question'}}
 {{/if}}
+
+{{#unless site.mobileView}}
+  {{people-image}}
+{{/unless}}
