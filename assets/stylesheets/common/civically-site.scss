@@ -42,8 +42,28 @@
   font-size: 1em;
 }
 
-.btn, .btn-flat, li>a, .add-event, .add-location, .election-status span, .select-box-kit-header {
+.btn,
+.btn-flat,
+.icon,
+.navigation-toggle,
+.nav-pills li>a,
+.add-event,
+.add-location,
+.election-status span,
+.d-editor-textarea-wrapper,
+.d-icon,
+.input-xxlarge,
+.ac-wrap,
+.select-kit-body,
+.select-kit.dropdown-select-box.is-expanded
+.select-kit-collection,
+.menu-panel {
   border-radius: 4px;
+}
+
+input,
+.select-kit-header, {
+  border-radius: 4px !important;
 }
 
 .d-header-icons .icon {
