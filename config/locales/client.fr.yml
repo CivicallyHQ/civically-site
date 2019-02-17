@@ -1,0 +1,102 @@
+fr:
+  js:
+    civically:
+      coming_soon: "Arrive bientôt"
+      github: "Github"
+      translate:
+        description: "Il nous manque {{missingCount}} traductions de l'anglais vers {{nom_régol}} sur cette page."
+        help: "[Aide pour traduire Civically] (https://www.transifex.com/civically/public/)."
+      prompt:
+        involved: "Vous voulez vous impliquer davantage dans Civically?"
+
+    faq: "Lignes directrices"
+
+    team:
+      label: "Équipe"
+
+    page_not_found:
+      back_to_home: "Rentrer à la maison"
+
+    app:
+      civically_site:
+        title: "Civically"
+        about: >
+          Vous aide à naviguer et à contribuer à Civically, avec des listes de pétitions, de plans, de travaux et de sujets faciles d'accès.
+        locked: "Définissez votre lieu ou votez pour une pétition relative au lieu pour déverrouiller l'appli Civically."
+        icon: '/plugins/civically-private/images/logo_small.png'
+        list:
+          petition:
+            title: "Pétitions"
+            help: "Pétitions à l'échelle du site"
+          plan:
+            title: "Plans"
+            help: "Plans sur Civically"
+          work:
+            title: "Travail"
+            help: "Travailler sur Civically"
+          run:
+            title: "Courir"
+            help: "Comment nous courons Civically"
+          none: "Pas de sujets d'actualité."
+
+    category:
+      meta:
+        label: "Meta catégorie"
+
+    plans:
+      topic:
+        type:
+          general:
+            label: 'Plan'
+            description: 'Poster un nouveau plan.'
+            title_placeholder: "Le titre de votre plan."
+            body_placeholder: 'Ajoutez le corps de votre plan.'
+    work:
+      topic:
+        type:
+          general:
+            label: 'Tâche'
+            description: 'Poster une nouvelle tâche.'
+            title_placeholder: "Le titre de votre tâche."
+            body_placeholder: 'Ajoutez une description de la tâche.'
+    plugins:
+      topic:
+        type:
+          general:
+            label: 'Plugin'
+            description: 'Poster un nouveau plugin.'
+            title_placeholder: "Nouveau titre de plugin."
+            body_placeholder: 'Ajouter une description du plugin.'
+    run:
+      topic:
+        type:
+          general:
+            label: 'Général'
+            description: 'Poster sur la façon dont Civically est exécuté.'
+            title_placeholder: "Le titre de votre post"
+            body_placeholder: 'Votre corps post-course.'
+    help:
+      topic:
+        type:
+          question:
+            label: 'Question'
+            description: 'Posez une question sur Civically.'
+            title_placeholder: "Avec quoi as tu besoin d'aide?"
+            body_placeholder: 'Ajoutez des détails à votre question.'
+
+    policies:
+      topic:
+        type:
+          general:
+            label: 'Politique'
+            description: 'Ajouter une nouvelle Civically politique.'
+            title_placeholder: "Titre de la politique"
+            body_placeholder: 'Organe directeur.'
+    how_to:
+      topic:
+        type:
+          general:
+            label: 'Comment'
+            description: 'Poster un comment.'
+            title_placeholder: "Titre de votre comment"
+            body_placeholder: 'Corps de votre comment.'
